@@ -33,9 +33,12 @@ li {
     list-style: none;
 }
 input {
-    font-size: 2px;
+    height: 16px;
+    width: 130px;
+    font-size: 8px;
     border-radius: 5px;
-    margin-left: 40%;
+    margin-left: 50%;
+    margin-top: 4px;
 }
 .menu h2 {
     text-align: center;
@@ -62,7 +65,6 @@ input {
       margin-top: 25px;
     }
     img {
-      width: 150%;
       box-shadow: 1px 2px 5px;
       transform: translateX(0);
     }
@@ -70,31 +72,31 @@ input {
       width: 50%;
     }
     .list1 .stay {
-      transform: translateX(-28%);
+      text-align: start;
     }
     .list1 .mkn2 {
       width: 65%;
       height: 72%;
     }
     .list1 .rndg {
-      transform: translateX(-16%);
+      text-align: start;
     }
     .list1 .mkn3 {
       width: 65%;
       height: 72%;
     }
     .list1 .bkso {
-      transform: translateX(-20%);
+      text-align: start;
     }
     .list1 {
       display: flex;
     }
     .list1 .mnu1 {
-      margin-right: -110px;
-      margin-left: 10px;
+      margin-right: -26%;
+      margin-left: 2%;
     }
     .list1 .mnu2 {
-      margin-right: -50px;
+      margin-right: -12%;
       margin-top: 1px;
     }
     .list1 .mnu3 {
@@ -104,32 +106,34 @@ input {
       display: flex;
     }
     .list2 .mkn4 {
-      width: 195%;
+      width: 150%;
       height: 72%;
     }
     .list2 .pmpk {
-      transform: translateX(25px);
+      text-align: start;
     }
     .list2 .mkn5 {
       width: 81%;
       height: 72%;
     }
     .list2 .gdgd {
-      transform: translateX(-15px);
+      text-align: start;
+      font-size: 20px;
     }
     .list2 .mkn6 {
       width: 70%;
       height: 72%;
     }
     .list2 .nsg {
-      transform: translateX(-25px);
+      text-align: start;
+      font-size: 19px;
     }
     .list2 .mnu4 {
-      margin-left: 12px;
+      margin-left: 2%;
     }
     .list2 .mnu5 {
-      margin-left: 70px;
-      margin-right: -14px;
+      margin-left: 12%;
+      margin-right: -3%;
     }
     .mnfvrt {
       margin-top: 140px;

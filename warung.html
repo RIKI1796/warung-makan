@@ -70,6 +70,7 @@
                   const text = item.textContent.toLowerCase();
                   if (text.includes(filter)) {
                     item.classList.remove("none");
+                    item.style.marginTop = "0";
                   } else {
                     item.classList.add("none");
                   }
