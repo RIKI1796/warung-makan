@@ -35,13 +35,233 @@ li {
     margin-right: 20px;
     list-style: none;
 }
-input {
-    font-size: 2px;
+  input {
+    height: 16px;
+    width: 200px;
     border-radius: 5px;
-    margin-left: 40%;
-}
+    font-size: 12px;
+    margin-top: 7px;
+    margin-left: 60%;
+  }
 .menu h2 {
     text-align: center;
+}
+nav h2 {
+  margin-left: 5px;
+  font-size: 23px;
+  margin-top: 2px;
+  font-family: Asap Condensed;
+}
+.daftar {
+margin-top: 25px;
+color: #eb5e00;
+font-family: Asap Condensed;
+font-size: 25px;
+margin-left: 5px;
+text-shadow: 1px 2px 2px black;
+}
+img {
+width: 150%;
+transform: translateX(0);
+}
+.list1 .mkn1 {
+width: 120px;
+}
+.list1 .stay {
+text-align: center;
+}
+.list1 .mkn2 {
+width: 120px;
+height: 120px;
+}
+.list1 .rndg {
+text-align: center;
+}
+.list1 .mkn3 {
+width: 120px;
+height: 120px;
+}
+.list1 .bkso {
+text-align: center;
+}
+.list1 {
+display: flex;
+margin-top: 15px;
+}
+.list1 .mnu1 {
+background-color: white;
+box-shadow: 1px 3px 7px;
+padding: 12px 5px;
+text-align: start;
+margin-right: 10px;
+margin-left: 5px;
+border-left: 3px solid #ebeb00;
+}
+.list1 .mnu2 {
+box-shadow: 1px 3px 7px;
+text-align: start;
+padding: 12px 5px;
+border-left: 3px solid #ebeb00;
+margin-right: 10px;
+margin-top: 1px;
+}
+.list1 .mnu3 {
+box-shadow: 1px 3px 7px;
+text-align: start;
+padding: 12px 5px;
+border-left: 3px solid #ebeb00;
+margin-top: 1px;
+}
+.list2 {
+display: flex;
+}
+.list2 .mkn4 {
+width: 120px;
+height: 120px;
+}
+.list2 .pmpk {
+text-align: center;
+}
+.list2 .mkn5 {
+width: 120px;
+height: 120px;
+}
+.list2 .gdgd {
+text-align: center;
+}
+.list2 .mkn6 {
+width: 120px;
+height: 120px;
+}
+.list2 .nsg {
+text-align: center;
+}
+.list2 .mnu4 {
+box-shadow: 1px 3px 7px;
+text-align: start;
+padding: 12px 5px;
+border-left: 3px solid #ebeb00;
+margin-top: 15px;
+margin-left: 5px;
+}
+.list2 .mnu5 {
+box-shadow: 1px 3px 7px;
+text-align: start;
+padding: 12px 5px;
+border-left: 3px solid #ebeb00;
+margin-top: 15px;
+margin-left: 10px;
+}
+.list2 .mnu6 {
+box-shadow: 1px 3px 7px;
+text-align: start;
+padding: 12px 5px;
+border-left: 3px solid #ebeb00;
+margin-top: 15px;
+margin-left: 10px;
+}
+.mnfvrt {
+margin-top: 140px;
+margin-left: 5px;
+font-family: Asap Condensed;
+font-size: 25px;
+text-shadow: 1px 2px 2px black;
+color: #2560ff;
+}
+.favorit1 {
+display: flex;
+}
+.favorit1 .mkn6 {
+width: 120px;
+height: 120px;
+}
+.favorit1 .nsg {
+text-align: center;
+}
+.favorit1 .mkn3 {
+width: 120px;
+height: 120px;
+}
+.favorit1 .bkso {
+text-align: center;
+}
+.favorit1 .mkn2 {
+width: 120px;
+height: 120px;
+}
+.favorit1 .rndg {
+text-align: center;
+}
+.fvrtmnu1 {
+box-shadow: 1px 3px 7px;
+text-align: start;
+padding: 12px 5px;
+border-left: 3px solid red;
+margin-top: 15px;
+margin-left: 5px;
+}
+.fvrtmnu2 {
+box-shadow: 1px 3px 7px;
+text-align: start;
+padding: 12px 5px;
+border-left: 3px solid red;
+margin-top: 15px;
+margin-left: 10px;
+}
+.fvrtmnu3 {
+box-shadow: 1px 3px 7px;
+text-align: start;
+padding: 12px 5px;
+border-left: 3px solid red;
+margin-top: 15px;
+margin-left: 10px;
+}
+.menu h2,
+.favorit h2 {
+margin-bottom: 8px;
+}
+.menu span,
+.favorit span {
+margin-left: 4px;
+font-family: Asap Condensed;
+color: #f74800;
+}
+.menu a,
+.favorit a {
+padding: 3px 1px;
+text-decoration: none;
+color: white;
+font-size: 11px;
+background-color: #1b3aff;
+border-radius: 3px;
+}
+.menu h2,
+.favorit h2 {
+font-size: 20px;
+}
+.menu .fas,
+.favorit .fas {
+color: #ff6b14;
+font-size: 8px;
+}
+
+.menu .content,
+.favorit .content {
+ display: flex;
+ justify-content: center;
+}
+
+nav .fas {
+display: flex;
+margin-top: 4px;
+margin-left: 30px;
+color: #ffa826;
+font-size: 20px;
+border-radius: 4px;
+}
+.jumlah {
+  font-size: 18px;
+  color: white;
 }
 .none {
     display: none;
@@ -233,6 +453,7 @@ input {
     }
     .menu span,
     .favorit span {
+      font-size: 15px;
       margin-left: 4px;
       font-family: Asap Condensed;
       color: #f74800;
@@ -242,7 +463,7 @@ input {
       padding: 3px 1px;
       text-decoration: none;
       color: white;
-      font-size: 13px;
+      font-size: 11px;
       background-color: #1b3aff;
       border-radius: 3px;
     }
@@ -250,14 +471,18 @@ input {
     .favorit h2 {
       font-size: 20px;
     }
-    .menu .fas {
+    .menu .fas,
+    .favorit .fas {
       color: #ff6b14;
     }
-/*    nav .fas {
+    nav .fas {
       margin-top: 6px;
       margin-left: 30px;
       color: #ffa826;
       font-size: 20px;
       border-radius: 4px;
-    }*/
+    }
+}
+@media only screen and (max-width: 420px) {
+
 }
