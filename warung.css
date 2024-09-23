@@ -321,7 +321,7 @@ border-radius: 4px;
     }
     .list1 .mnu1 {
       background-color: white;
-      box-shadow: 1px 3px 7px;
+      box-shadow: 0px 0px 7px;
       padding: 12px 5px;
       text-align: start;
       margin-right: 10px;
@@ -329,7 +329,7 @@ border-radius: 4px;
       border-left: 3px solid #ebeb00;
     }
     .list1 .mnu2 {
-      box-shadow: 1px 3px 7px;
+      box-shadow: 0px 0px 7px;
       text-align: start;
       padding: 12px 5px;
       border-left: 3px solid #ebeb00;
@@ -337,7 +337,7 @@ border-radius: 4px;
       margin-top: 1px;
     }
     .list1 .mnu3 {
-      box-shadow: 1px 3px 7px;
+      box-shadow: 0px 0px 7px;
       text-align: start;
       padding: 12px 5px;
       border-left: 3px solid #ebeb00;
@@ -368,7 +368,7 @@ border-radius: 4px;
       text-align: center;
     }
     .list2 .mnu4 {
-      box-shadow: 1px 3px 7px;
+      box-shadow: 0px 0px 7px;
       text-align: start;
       padding: 12px 5px;
       border-left: 3px solid #ebeb00;
@@ -376,7 +376,7 @@ border-radius: 4px;
       margin-left: 5px;
     }
     .list2 .mnu5 {
-      box-shadow: 1px 3px 7px;
+      box-shadow: 0px 0px 7px;
       text-align: start;
       padding: 12px 5px;
       border-left: 3px solid #ebeb00;
@@ -384,7 +384,7 @@ border-radius: 4px;
       margin-left: 10px;
     }
     .list2 .mnu6 {
-      box-shadow: 1px 3px 7px;
+      box-shadow: 0px 0px 7px;
       text-align: start;
       padding: 12px 5px;
       border-left: 3px solid #ebeb00;
@@ -424,7 +424,7 @@ border-radius: 4px;
       text-align: center;
     }
     .fvrtmnu1 {
-      box-shadow: 1px 3px 7px;
+      box-shadow: 0px 0px 7px;
       text-align: start;
       padding: 12px 5px;
       border-left: 3px solid red;
@@ -432,7 +432,7 @@ border-radius: 4px;
       margin-left: 5px;
     }
     .fvrtmnu2 {
-      box-shadow: 1px 3px 7px;
+      box-shadow: 0px 0px 7px;
       text-align: start;
       padding: 12px 5px;
       border-left: 3px solid red;
@@ -440,7 +440,7 @@ border-radius: 4px;
       margin-left: 10px;
     }
     .fvrtmnu3 {
-      box-shadow: 1px 3px 7px;
+      box-shadow: 0px 0px 7px;
       text-align: start;
       padding: 12px 5px;
       border-left: 3px solid red;
@@ -454,7 +454,7 @@ border-radius: 4px;
     .menu span,
     .favorit span {
       font-size: 15px;
-      margin-left: 4px;
+      margin-left: 14px;
       font-family: Asap Condensed;
       color: #f74800;
     }
@@ -463,6 +463,7 @@ border-radius: 4px;
       padding: 3px 1px;
       text-decoration: none;
       color: white;
+      margin-left: 7px;
       font-size: 11px;
       background-color: #1b3aff;
       border-radius: 3px;
