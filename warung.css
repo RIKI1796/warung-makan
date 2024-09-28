@@ -3,11 +3,14 @@
     padding: 0;
 }
 body {
+    background-image: linear-gradient(to bottom, white, rgb(186, 186, 186));
 }
-img {
+.menu img,
+.favorit img {
     width: 30%;
     margin-top: 20px;
-    transform: translateX(116%);
+    width: 150%;
+    transform: translateX(0);
 }
 nav h2 {
     font-size: 23px;
@@ -40,7 +43,7 @@ input {
     border-radius: 5px;
     font-size: 12px;
     margin-top: 7px;
-    margin-left: 60%;
+    margin-left: 65%;
 }
 .menu h2 {
     text-align: center;
@@ -58,10 +61,6 @@ nav h2 {
     font-size: 40px;
     margin-left: 5px;
     text-shadow: 1px 2px 2px black;
-}
-img {
-    width: 150%;
-    transform: translateX(0);
 }
 .list1 .mkn1 {
     width: 350px;
@@ -136,6 +135,7 @@ img {
     text-align: center;
 }
 .list2 .mnu4 {
+    background-color: white;
     box-shadow: 1px 3px 7px;
     text-align: start;
     padding: 12px 8px;
@@ -144,6 +144,7 @@ img {
     margin-left: 20px;
 }
 .list2 .mnu5 {
+    background-color: white;
     box-shadow: 1px 3px 7px;
     text-align: start;
     padding: 12px 8px;
@@ -152,6 +153,7 @@ img {
     margin-left: 10px;
 }
 .list2 .mnu6 {
+    background-color: white;
     box-shadow: 1px 3px 7px;
     text-align: start;
     padding: 12px 8px;
@@ -192,6 +194,7 @@ img {
     text-align: center;
 }
 .fvrtmnu1 {
+    background-color: white;
     box-shadow: 1px 3px 7px;
     text-align: start;
     padding: 12px 8px;
@@ -200,6 +203,7 @@ img {
     margin-left: 20px;
 }
 .fvrtmnu2 {
+    background-color: white;
     box-shadow: 1px 3px 7px;
     text-align: start;
     padding: 12px 8px;
@@ -208,6 +212,7 @@ img {
     margin-left: 10px;
 }
 .fvrtmnu3 {
+    background-color: white;
     box-shadow: 1px 3px 7px;
     text-align: start;
     padding: 12px 8px;
@@ -252,10 +257,14 @@ img {
     justify-content: center;
 }
 
+.fa-search {
+    display: none;
+}
+
 nav .fas {
     display: flex;
     margin-top: 4px;
-    margin-left: 30px;
+    margin-left: 20px;
     color: #ffa826;
     font-size: 20px;
     border-radius: 4px;
