@@ -18,9 +18,12 @@
         <nav>
             <h2>Warung Makan</h2>
             <input id="pencarian" placeholder="Cari Menu..." type="search" />
+            <span id="silang">X</span>
             <div class="icons">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-shopping-cart"><h3 class="jumlah">0</h3></i>
+                <i id="search" class="fas fa-search"></i>
+                <i class="fas fa-shopping-cart" id="cart"
+                    ><h3 class="jumlah">0</h3></i
+                >
             </div>
         </nav>
 
@@ -205,6 +208,38 @@
                         }
                     });
                 }
+            });
+        </script>
+        <script>
+            const icari = document.getElementById("search");
+            const pencarian = document.getElementById("pencarian");
+            const silang = document.getElementById("silang");
+            const keranjang = document.getElementById("cart");
+
+            icari.addEventListener("click", () => {
+                pencarian.style.opacity = "1";
+                pencarian.style.width = "130px";
+                pencarian.style.marginLeft = "85px";
+                keranjang.style.transform = "translateX(" + 7 + "px)";
+                icari.style.display = "none";
+                icari.style.opacity = "0";
+                icari.style.marginLeft = "5px";
+                icari.style.transform = "translateX(" + 145 + "px)";
+                silang.style.display = "flex";
+                silang.style.marginLeft = "5px";
+                silang.style.opacity = "1";
+            });
+
+            silang.addEventListener("click", () => {
+                pencarian.style.width = "0";
+                pencarian.style.marginLeft = "50px";
+                pencarian.style.opacity = "0";
+                keranjang.style.transform = "translateX(" + 150 + "px)";
+                icari.style.display = "flex";
+                icari.style.opacity = "1";
+                icari.style.marginLeft = "5px";
+                silang.style.display = "none";
+                silang.style.opacity = "0";
             });
         </script>
     </body>
