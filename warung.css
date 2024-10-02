@@ -280,7 +280,7 @@ nav .fas {
 #silang {
     display: none;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 425px) {
     nav {
         height: 30px;
     }
