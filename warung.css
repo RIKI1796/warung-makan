@@ -280,7 +280,7 @@ nav .fas {
 #silang {
     display: none;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 768px) {
     nav {
         height: 30px;
     }
@@ -516,6 +516,4 @@ nav .fas {
         font-size: 22px;
         margin-top: 1.5px;
     }
-}
-@media only screen and (max-width: 420px) {
 }
