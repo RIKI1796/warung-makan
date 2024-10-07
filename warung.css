@@ -14,7 +14,7 @@ body {
 }
 nav h2 {
     font-size: 23px;
-    background-image: linear-gradient(to bottom, #f0ff07, #f2ff26);
+    background-image: linear-gradient(to bottom, #ff0404, #d70000);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-stroke: white 0.1px;
@@ -24,8 +24,9 @@ nav {
     top: 0;
     z-index: 1;
     display: flex;
-    background-color: red;
+    background-color: white;
     box-shadow: 1px 3px 10px;
+    border-bottom: 3px solid red;
 }
 ul {
     display: flex;
@@ -266,13 +267,14 @@ nav .fas {
     display: flex;
     margin-top: 4px;
     margin-left: 20px;
-    color: #ffa826;
+    color: red;
     font-size: 20px;
     border-radius: 4px;
 }
 .jumlah {
     font-size: 18px;
     color: white;
+    -webkit-text-stroke: 0.4px black;
 }
 .none {
     display: none;
@@ -294,9 +296,8 @@ nav .fas {
         transition: 1s;
     }
     nav h2 {
-        margin-left: 5px;
-        font-size: 23px;
-        margin-top: 2px;
+        font-size: 20px;
+        margin-top: 3px;
         font-family: Asap Condensed;
     }
     .daftar {
@@ -494,14 +495,14 @@ nav .fas {
         font-size: 5px;
     }
     #cart {
-        transform: translateX(100px);
+        transform: translateX(65px);
         margin-top: 4px;
-        color: #ffa826;
+        color: red;
         font-size: 20px;
         border-radius: 4px;
     }
     #search {
-      transform: translateX(95px);
+      transform: translateX(75px);
         display: flex;
         margin-left: 5px;
     }
@@ -512,7 +513,7 @@ nav .fas {
         display: none;
         opacity: 0;
         font-family: Asap Condensed;
-        color: #ffa826;
+        color: #e58900;
         font-size: 22px;
         margin-top: 1.5px;
     }
