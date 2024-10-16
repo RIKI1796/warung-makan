@@ -381,20 +381,22 @@ nav .fas {
         width: 0;
         font-size: 12px;
         margin-top: 7px;
+        border: 1px solid black;
         margin-left: 100px;
         transition: 1s;
     }
     .menu {
-        transform: translateY(-1030px);
+        transform: translateY(-1600px);
+        width: 110%;
     }
-    nav h2 {
+    nav .judul {
         font-size: 20px;
         margin-top: 3px;
         font-family: Asap Condensed;
     }
     .daftar {
         color: #eb5e00;
-        transform: translateY(-1050px);
+        transform: translateY(-1620px);
         font-family: Asap Condensed;
         font-size: 25px;
         margin-left: 5px;
@@ -405,21 +407,21 @@ nav .fas {
         transform: translateX(0);
     }
     .list1 .mkn1 {
-        width: 120px;
+        width: 180px;
     }
     .list1 .stay {
         text-align: center;
     }
     .list1 .mkn2 {
-        width: 120px;
-        height: 120px;
+        width: 180px;
+        height: 180px;
     }
     .list1 .rndg {
         text-align: center;
     }
     .list1 .mkn3 {
-        width: 120px;
-        height: 120px;
+        width: 180px;
+        height: 180px;
     }
     .list1 .bkso {
         text-align: center;
@@ -458,22 +460,22 @@ nav .fas {
         display: flex;
     }
     .list2 .mkn4 {
-        width: 120px;
-        height: 120px;
+        width: 180px;
+        height: 180px;
     }
     .list2 .pmpk {
         text-align: center;
     }
     .list2 .mkn5 {
-        width: 120px;
-        height: 120px;
+        width: 180px;
+        height: 180px;
     }
     .list2 .gdgd {
         text-align: center;
     }
     .list2 .mkn6 {
-        width: 120px;
-        height: 120px;
+        width: 180px;
+        height: 180px;
     }
     .list2 .nsg {
         text-align: center;
@@ -518,28 +520,29 @@ nav .fas {
         color: #2560ff;
     }
     .favorit {
-        transform: translateY(-300px);
+        transform: translateY(-900px);
+        width: 110%;
     }
     .favorit1 {
         display: flex;
     }
     .favorit1 .mkn6 {
-        width: 120px;
-        height: 120px;
+        width: 180px;
+        height: 180px;
     }
     .favorit1 .nsg {
         text-align: center;
     }
     .favorit1 .mkn3 {
-        width: 120px;
-        height: 120px;
+        width: 180px;
+        height: 180px;
     }
     .favorit1 .bkso {
         text-align: center;
     }
     .favorit1 .mkn2 {
-        width: 120px;
-        height: 120px;
+        width: 180px;
+        height: 180px;
     }
     .favorit1 .rndg {
         text-align: center;
@@ -574,7 +577,7 @@ nav .fas {
     }
     .menu span,
     .favorit span {
-        font-size: 15px;
+        font-size: 18px;
         margin-left: 14px;
         font-family: Asap Condensed;
         color: #f74800;
@@ -600,7 +603,7 @@ nav .fas {
     }
     #cart {
         transform: translateX(65px);
-        margin-top: 4px;
+        margin-top: 6px;
         color: red;
         font-size: 20px;
         border-radius: 4px;
@@ -610,6 +613,17 @@ nav .fas {
         display: flex;
         margin-left: 5px;
     }
+
+    .jumlah {
+        font-size: 20px;
+        -webkit-text-stroke: 0.6px black;
+    }
+
+    nav .fas {
+        font-size: 20px;
+        margin-top: 6px;
+    }
+
     .icons {
         display: flex;
     }
@@ -637,7 +651,7 @@ nav .fas {
     }
     .wrapper .menu1 img {
         width: 70%;
-        transform: translateX(65px);
+        transform: translateX(110px);
         border-radius: 10px;
         box-shadow: 0 0 7px black;
     }
@@ -657,7 +671,7 @@ nav .fas {
     }
     .wrapper .menu2 {
         position: relative;
-        transform: translateX(105%) translateY(-530px);
+        transform: translateX(105%) translateY(-780px);
         margin-top: 30%;
         margin-bottom: 20%;
         box-shadow: 0 0 10px black;
@@ -668,12 +682,12 @@ nav .fas {
     }
     .wrapper .menu2 img {
         width: 80%;
-        transform: translateX(42px);
+        transform: translateX(75px);
         border-radius: 10px;
         box-shadow: 0 0 7px black;
     }
     .wrapper .menu3 {
-        transform: translateX(206%) translateY(-1075px);
+        transform: translateX(206%) translateY(-1600px);
         margin-top: 30%;
         margin-bottom: 20%;
         box-shadow: 0 0 10px black;
@@ -684,60 +698,60 @@ nav .fas {
     }
     .wrapper .menu3 img {
         width: 70%;
-        transform: translateX(65px);
+        transform: translateX(110px);
         box-shadow: 0 0 7px black;
         border-radius: 10px;
     }
 
-    .komen-content {
-        display: flex;
-        overflow-x: hidden;
-        transform: translateY(-980px);
-        animation: scroll 7s linear infinite;
-    }
+/*     .komen-content {
+    display: flex;
+    overflow-x: hidden;
+    transform: translateY(-980px);
+    animation: scroll 7s linear infinite;
+}
 
-    .komen1,
-    .komen2,
-    .komen3,
-    .komen4 {
-        position: relative;
-        background-color: #020214ea;
-        gap: 2rem;
-        margin-left: 10px;
-        color: white;
-        border-radius: 15px;
-    }
+.komen1,
+.komen2,
+.komen3,
+.komen4 {
+    position: relative;
+    background-color: #020214ea;
+    gap: 2rem;
+    margin-left: 10px;
+    color: white;
+    border-radius: 15px;
+}
 
-    .komen-content img {
-        background-color: white;
-        border: 1.3px solid white;
-        border-radius: 50%;
-        width: 8.8%;
-    }
+.komen-content img {
+    background-color: white;
+    border: 1.3px solid white;
+    border-radius: 50%;
+    width: 8.8%;
+}
 
-    .komen1 h3,
-    .komen2 h3,
-    .komen3 h3,
-    .komen4 h3 {
-        margin-left: 30px;
-        margin-top: 15px;
-    }
+.komen1 h3,
+.komen2 h3,
+.komen3 h3,
+.komen4 h3 {
+    margin-left: 30px;
+    margin-top: 15px;
+}
 
-    .header1,
-    .header2,
-    .header3,
-    .header4 {
-        display: flex;
-        gap: 0.7rem;
-        margin-left: 25px;
-        margin-top: 5px;
+.header1,
+.header2,
+.header3,
+.header4 {
+    display: flex;
+    gap: 0.7rem;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(0);
     }
-    @keyframes scroll {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(-700px);
-        }
+    to {
+        transform: translateX(-700px);
     }
+} */
 }
