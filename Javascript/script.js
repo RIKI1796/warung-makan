@@ -8,7 +8,7 @@ const user_icon = document.getElementById("user-icon");
 const profil_menu = document.getElementById("profil-menu");
 const daftar_menu = document.getElementById("daftar-menu");
 const favorit = document.getElementById("favorit");
-const search = document.getElementById("search")
+const search = document.getElementById("search");
 const list = document.querySelectorAll(".menu div");
 
 search_icon.addEventListener("click", () => {
@@ -60,5 +60,13 @@ search.addEventListener("input", function () {
         item.classList.remove("show");
       }
     });
+  }
+});
+
+search.addEventListener("input", () => {
+  if (search.value === "") {
+    daftar_menu.classList.add("none");
+  } else {
+    daftar_menu.classList.remove("none");
   }
 });
