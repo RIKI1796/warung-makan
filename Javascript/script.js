@@ -66,15 +66,10 @@ search.addEventListener("input", function () {
 });
 
 search.addEventListener("input", () => {
-  if (search.value === "") {
+  const inputValue = search.value.trim().toLowerCase();
+  if (inputValue === "") {
     daftar_menu.classList.add("none");
-  } else {
-    daftar_menu.classList.remove("none");
-  }
-});
-
-search.addEventListener("input", () => {
-  if (search.value.toLowerCase() === "sigma") {
+  } else if (inputValue === "sigma") {
     daftar_menu.classList.add("none");
     sigma.classList.remove("none");
     sigma.classList.add("sigma");
