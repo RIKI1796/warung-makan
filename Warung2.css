@@ -245,4 +245,8 @@
     .show {
         display: inline;
     }
+    .sigma {
+      width: 50%;
+      margin: 10px 100px;
+    }
 }
