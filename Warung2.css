@@ -7,7 +7,7 @@
         display: grid;
     }
 
-    #profil-menu {
+    #profil-menu .none {
         display: none;
     }
 
@@ -16,9 +16,9 @@
         margin-top: 330px;
         color: #b7b7b7c7;
     }
-
+    
     #search-menu {
-        display: none;
+      display: none;
     }
 
     #search-menu #search {
@@ -57,7 +57,7 @@
         color: red;
     }
 
-    nav #home {
+    nav #home-nav {
         margin-top: 3px;
         margin-left: 5px;
         color: red;
