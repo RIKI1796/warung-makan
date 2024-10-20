@@ -1,8 +1,48 @@
-// filter search
+// footer menu
 
-const search = document.getElementById("pencarian");
+const search_menu = document.getElementById("search-menu");
+const home = document.getElementById("home");
+const home_icon = document.getElementById("home-icon");
+const search_icon = document.getElementById("search-icon");
+const user_icon = document.getElementById("user-icon");
+const profil_menu = document.getElementById("profil-menu");
+const daftar_menu = document.getElementById("daftar-menu");
+const favorit = document.getElementById("favorit");
+const search = document.getElementById("search")
 const list = document.querySelectorAll(".menu div");
-const pempek = document.getElementById("pempek");
+
+search_icon.addEventListener("click", () => {
+  search_menu.style.display = "grid";
+  home.style.display = "none";
+  profil_menu.style.display = "none";
+  daftar_menu.classList.add("none");
+  favorit.classList.add("none");
+  search_icon.classList.add("footer-fn");
+  home_icon.classList.remove("footer-fn");
+  user_icon.classList.remove("footer-fn");
+});
+
+home_icon.addEventListener("click", () => {
+  search_menu.style.display = "none";
+  home.style.display = "grid";
+  profil_menu.style.display = "none";
+  daftar_menu.style.display = "inherit";
+  favorit.style.display = "inherit";
+  home_icon.classList.add("footer-fn");
+  search_icon.classList.remove("footer-fn");
+  user_icon.classList.remove("footer-fn");
+});
+
+user_icon.addEventListener("click", () => {
+  search_menu.style.display = "none";
+  home.style.display = "none";
+  profil_menu.style.display = "grid";
+  daftar_menu.style.display = "none";
+  favorit.style.display = "none";
+  user_icon.classList.add("footer-fn");
+  home_icon.classList.remove("footer-fn");
+  search_icon.classList.remove("footer-fn");
+});
 
 search.addEventListener("input", function () {
   var width = window.innerWidth;
@@ -11,63 +51,14 @@ search.addEventListener("input", function () {
     Array.from(list).forEach(function (item) {
       const text = item.textContent.toLowerCase();
       if (text.includes(filter)) {
+        item.classList.add("show");
+        daftar_menu.classList.remove("none");
         item.classList.remove("none");
-        item.style.width = "120px";
+        item.style.width = "135px"
       } else {
         item.classList.add("none");
+        item.classList.remove("show");
       }
     });
   }
-});
-
-search.addEventListener("input", function () {
-  var width = window.innerWidth;
-  if (width >= 1000) {
-    const filter = search.value.toLowerCase();
-    Array.from(list).forEach(function (item) {
-      const text = item.textContent.toLowerCase();
-      if (text.includes(filter)) {
-        item.classList.remove("none");
-        item.style.width = "350px";
-        item.style.transform = "translateY(" + 0 + "px)";
-        // pempek.style.transform = "translateY(" + (-520) + "px)";
-      } else {
-        item.classList.add("none");
-      }
-    });
-  }
-});
-
-
-// animasi search
-
-const icari = document.getElementById("search");
-const pencarian = document.getElementById("pencarian");
-const silang = document.getElementById("silang");
-const keranjang = document.getElementById("cart");
-
-icari.addEventListener("click", () => {
-  pencarian.style.opacity = "1";
-  pencarian.style.width = "130px";
-  pencarian.style.marginLeft = "60px";
-  keranjang.style.transform = "translateX(" + 7 + "px)";
-  icari.style.display = "none";
-  icari.style.opacity = "0";
-  icari.style.marginLeft = "5px";
-  icari.style.transform = "translateX(" + 70 + "px)";
-  silang.style.display = "flex";
-  silang.style.marginLeft = "5px";
-  silang.style.opacity = "1";
-});
-
-silang.addEventListener("click", () => {
-  pencarian.style.width = "0";
-  pencarian.style.marginLeft = "0";
-  pencarian.style.opacity = "0";
-  keranjang.style.transform = "translateX(" + 60 + "px)";
-  icari.style.display = "flex";
-  icari.style.opacity = "1";
-  icari.style.marginLeft = "5px";
-  silang.style.display = "none";
-  silang.style.opacity = "0";
 });
