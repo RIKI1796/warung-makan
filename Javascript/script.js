@@ -13,9 +13,9 @@ const list = document.querySelectorAll(".menu div");
 const sigma = document.getElementById("sigma");
 
 search_icon.addEventListener("click", () => {
-  search_menu.style.display = "grid";
+  search_menu.style.display = "inherit";
   home.style.display = "none";
-  profil_menu.style.display = "none";
+  profil_menu.classList.add("none");
   daftar_menu.classList.add("none");
   favorit.classList.add("none");
   sigma.classList.add("none");
@@ -26,10 +26,10 @@ search_icon.addEventListener("click", () => {
 
 home_icon.addEventListener("click", () => {
   search_menu.style.display = "none";
-  home.style.display = "grid";
-  profil_menu.style.display = "none";
-  daftar_menu.style.display = "inherit";
-  favorit.style.display = "inherit";
+  home.style.display = "inherit";
+  profil_menu.classList.add("none");
+  daftar_menu.classList.remove("none");
+  favorit.classList.remove("none");
   home_icon.classList.add("footer-fn");
   search_icon.classList.remove("footer-fn");
   user_icon.classList.remove("footer-fn");
@@ -37,10 +37,10 @@ home_icon.addEventListener("click", () => {
 
 user_icon.addEventListener("click", () => {
   search_menu.style.display = "none";
-  home.style.display = "none";
-  profil_menu.style.display = "grid";
-  daftar_menu.style.display = "none";
-  favorit.style.display = "none";
+  home.classList.add("none");
+  profil_menu.classList.remove("none");
+  daftar_menu.classList.add("none");
+  favorit.classList.add("none");
   user_icon.classList.add("footer-fn");
   home_icon.classList.remove("footer-fn");
   search_icon.classList.remove("footer-fn");
