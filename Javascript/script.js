@@ -10,6 +10,7 @@ const daftar_menu = document.getElementById("daftar-menu");
 const favorit = document.getElementById("favorit");
 const search = document.getElementById("search");
 const list = document.querySelectorAll(".menu div");
+const sigma = document.getElementById("sigma");
 
 search_icon.addEventListener("click", () => {
   search_menu.style.display = "grid";
@@ -17,6 +18,7 @@ search_icon.addEventListener("click", () => {
   profil_menu.style.display = "none";
   daftar_menu.classList.add("none");
   favorit.classList.add("none");
+  sigma.classList.add("none");
   search_icon.classList.add("footer-fn");
   home_icon.classList.remove("footer-fn");
   user_icon.classList.remove("footer-fn");
@@ -68,5 +70,16 @@ search.addEventListener("input", () => {
     daftar_menu.classList.add("none");
   } else {
     daftar_menu.classList.remove("none");
+  }
+});
+
+search.addEventListener("input", () => {
+  if (search.value.toLowerCase() === "sigma") {
+    daftar_menu.classList.add("none");
+    sigma.classList.remove("none");
+    sigma.classList.add("sigma");
+  } else {
+    daftar_menu.classList.remove("none");
+    sigma.classList.add("none");
   }
 });
