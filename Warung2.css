@@ -257,6 +257,7 @@ nav #home-nav {
     nav h2 {
         font-size: 40px;
         margin-top: -6px;
+        width: 100%;
     }
     nav #home-nav {
         font-size: 30px;
@@ -303,42 +304,42 @@ nav #home-nav {
     }
     .daftar-menu .menu a,
     .favorit a {
-      margin-left: 70px;
-      height: 20px;
-      font-size: 22px;
-      text-align: center;
+        margin-left: 70px;
+        height: 20px;
+        font-size: 22px;
+        text-align: center;
     }
     .daftar-menu .menu h2,
     .favorit h2 {
-      font-size: 40px;
+        font-size: 40px;
     }
     .daftar-menu .menu .harga,
-   .favorit .harga {
-     font-size: 30px;
-   }
-   .daftar-menu .menu .content,
-   .favorit .content {
-     font-size: 20px;
-   }
-   .footer-menu {
-     height: 80px;
-   }
-   .footer-menu .icon {
-     font-size: 40px;
-     margin-top: 10px;
-   }
-   #search-menu #search {
-     width: 90%;
-     margin-left: 80px;
-     height: 25px;
-     font-size: 30px;
-   }
-   #profil-menu h1 {
-     margin-top: 340px;
-     font-size: 100px;
-     text-align: center;
-   }
-   .daftar-menu .menu {
-     margin-bottom: 130px;
-   }
+    .favorit .harga {
+        font-size: 30px;
+    }
+    .daftar-menu .menu .content,
+    .favorit .content {
+        font-size: 20px;
+    }
+    .footer-menu {
+        height: 80px;
+    }
+    .footer-menu .icon {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    #search-menu #search {
+        width: 90%;
+        margin-left: 80px;
+        height: 25px;
+        font-size: 30px;
+    }
+    #profil-menu h1 {
+        margin-top: 340px;
+        font-size: 100px;
+        text-align: center;
+    }
+    .daftar-menu .menu {
+        margin-bottom: 130px;
+    }
 }
