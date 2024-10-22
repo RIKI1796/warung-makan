@@ -347,5 +347,6 @@ nav #home-nav {
     }
     .footer-menu {
       transition: 0.4s;
+      bottom: -100px;
     }
 }
