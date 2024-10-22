@@ -100,15 +100,18 @@ search.addEventListener("input", () => {
 });
 
 var prevScrollpos = window.pageYOffset;
+
 window.onscroll = function() {
   var width = window.innerWidth;
   if (width >= 1440) {
     var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
+
+    if (prevScrollpos < currentScrollPos) {
       footer_menu.style.bottom = "0";
     } else {
       footer_menu.style.bottom = "-100px";
     }
+
     prevScrollpos = currentScrollPos;
   }
 };
