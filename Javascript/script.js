@@ -16,9 +16,9 @@ search_icon.addEventListener("click", () => {
   search_menu.style.display = "inherit";
   home.style.display = "none";
   profil_menu.classList.add("none");
-  daftar_menu.classList.add("none");
-  favorit.classList.add("none");
-  sigma.classList.add("none");
+  daftar_menu.style.display = "none";
+  profil_menu.style.display = "none";
+  sigma.style.display = "none";
   search_icon.classList.add("footer-fn");
   home_icon.classList.remove("footer-fn");
   user_icon.classList.remove("footer-fn");
@@ -27,9 +27,9 @@ search_icon.addEventListener("click", () => {
 home_icon.addEventListener("click", () => {
   search_menu.style.display = "none";
   home.style.display = "inherit";
-  profil_menu.classList.add("none");
-  daftar_menu.classList.remove("none");
-  favorit.classList.remove("none");
+  profil_menu.style.display = "none";
+  daftar_menu.style.display = "inline";
+  favorit.style.display = "inline";
   home_icon.classList.add("footer-fn");
   search_icon.classList.remove("footer-fn");
   user_icon.classList.remove("footer-fn");
@@ -38,9 +38,9 @@ home_icon.addEventListener("click", () => {
 user_icon.addEventListener("click", () => {
   search_menu.style.display = "none";
   home.style.display = "none";
-  profil_menu.classList.remove("none");
-  daftar_menu.classList.add("none");
-  favorit.classList.add("none");
+  profil_menu.style.display = "none";
+  daftar_menu.style.display = "none";
+  favorit.style.display = "none";
   user_icon.classList.add("footer-fn");
   home_icon.classList.remove("footer-fn");
   search_icon.classList.remove("footer-fn");
