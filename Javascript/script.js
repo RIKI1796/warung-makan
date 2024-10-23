@@ -89,10 +89,10 @@ search.addEventListener("input", () => {
   const inputValue = search.value.trim().toLowerCase();
   if (inputValue === "") {
     daftar_menu.classList.add("none");
+    sigma.classList.add("none");
   } else if (inputValue === "sigma") {
     daftar_menu.classList.add("none");
     sigma.classList.remove("none");
-    sigma.classList.add("sigma");
   } else {
     daftar_menu.classList.remove("none");
     sigma.classList.add("none");
