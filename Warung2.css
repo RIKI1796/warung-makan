@@ -258,6 +258,7 @@ nav #home-nav {
     nav h2 {
         font-size: 40px;
         margin-top: -6px;
+        width: 100%;
     }
     nav #home-nav {
         font-size: 30px;
