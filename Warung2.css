@@ -492,12 +492,12 @@ nav #home-nav {
 }
 }
 
-@media only screen and (min-width: 1440px) {
+@media (max-width: 1336px) and (max-height: 768px) {
     nav {
         height: 40px;
     }
     nav .icons {
-        margin-left: 1360px;
+        margin-left: 1000px;
         font-size: 30px;
     }
     nav h2 {
