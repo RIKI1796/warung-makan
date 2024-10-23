@@ -256,7 +256,7 @@ nav #home-nav {
     }
     .wrapper {
         width: 1010px;
-        transform: translateX(300px);
+        transform: translateX(200px);
     }
     .wrapper .menu1 img {
         width: 1000px;
