@@ -492,7 +492,7 @@ nav #home-nav {
 }
 }*/
 
-@media only screen and (max-width: 1336px) {
+@media only screen and (max-width: 1366px) {
     nav {
         height: 40px;
     }
@@ -544,7 +544,7 @@ nav #home-nav {
     .favorit .mkn6,
     .favorit .mkn3,
     .favorit .mkn2 {
-        height: 600px;
+        height: 300px;
         margin-left: 25px;
     }
     .daftar-menu .menu a,
