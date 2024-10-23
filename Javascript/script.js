@@ -11,14 +11,13 @@ const list = document.querySelectorAll(".menu div");
 const sigma = document.getElementById("sigma");
 const footer_menu = document.getElementById("footer-menu");
 
-// fungsi search
+// fungsi footer
 search_icon.addEventListener("click", () => {
   search_menu.style.display = "inherit";
   home.style.display = "none";
   profil_menu.classList.add("none");
   daftar_menu.classList.add("none");
   favorit.classList.add("none");
-  // footer_menu.style.bottom = "100px";
   sigma.classList.add("none");
   search_icon.classList.add("footer-fn");
   home_icon.classList.remove("footer-fn");
@@ -42,7 +41,6 @@ user_icon.addEventListener("click", () => {
   profil_menu.classList.remove("none");
   daftar_menu.classList.add("none");
   favorit.classList.add("none");
-  // footer_menu.style.bottom = "0";
   user_icon.classList.add("footer-fn");
   home_icon.classList.remove("footer-fn");
   search_icon.classList.remove("footer-fn");
@@ -70,7 +68,7 @@ search.addEventListener("input", function () {
 
 search.addEventListener("input", function () {
   var width = window.innerWidth;
-  if (width >= 1440) {
+  if (width >= 1000) {
     const filter = search.value.toLowerCase();
     Array.from(list).forEach(function (item) {
       const text = item.textContent.toLowerCase();
