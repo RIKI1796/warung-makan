@@ -18,6 +18,7 @@ search_icon.addEventListener("click", () => {
   profil_menu.classList.add("none");
   daftar_menu.classList.add("none");
   favorit.classList.add("none");
+  // footer_menu.style.bottom = "100px";
   sigma.classList.add("none");
   search_icon.classList.add("footer-fn");
   home_icon.classList.remove("footer-fn");
@@ -41,6 +42,7 @@ user_icon.addEventListener("click", () => {
   profil_menu.classList.remove("none");
   daftar_menu.classList.add("none");
   favorit.classList.add("none");
+  // footer_menu.style.bottom = "0";
   user_icon.classList.add("footer-fn");
   home_icon.classList.remove("footer-fn");
   search_icon.classList.remove("footer-fn");
@@ -99,19 +101,19 @@ search.addEventListener("input", () => {
   }
 });
 
-var prevScrollpos = window.pageYOffset;
+  // var prevScrollpos = window.pageYOffset;
 
-window.onscroll = function() {
-  var width = window.innerWidth;
-  if (width >= 1000) {
-    var currentScrollPos = window.pageYOffset;
+  // window.onscroll = function() {
+  //   var width = window.innerWidth;
+  //   if (width >= 1440) {
+  //     var currentScrollPos = window.pageYOffset;
 
-    if (prevScrollpos < currentScrollPos) {
-      footer_menu.style.bottom = "0";
-    } else {
-      footer_menu.style.bottom = "-100px";
-    }
+  //     if (prevScrollpos < currentScrollPos) {
+  //       footer_menu.style.bottom = "0";
+  //     } else {
+  //       footer_menu.style.bottom = "-100px";
+  //     }
 
-    prevScrollpos = currentScrollPos;
-  }
-};
+  //     prevScrollpos = currentScrollPos;
+  //   }
+  // };
