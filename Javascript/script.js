@@ -15,8 +15,9 @@ const footer_menu = document.getElementById("footer-menu");
 search_icon.addEventListener("click", () => {
   search_menu.style.display = "inherit";
   home.style.display = "none";
-  profil_menu.classList.add("none");
+  profil_menu.style.display = "none";
   daftar_menu.style.display = "none";
+  favorit.style.display = "none";
   profil_menu.style.display = "none";
   sigma.style.display = "none";
   search_icon.classList.add("footer-fn");
@@ -38,7 +39,7 @@ home_icon.addEventListener("click", () => {
 user_icon.addEventListener("click", () => {
   search_menu.style.display = "none";
   home.style.display = "none";
-  profil_menu.style.display = "none";
+  profil_menu.style.display = "inherit";
   daftar_menu.style.display = "none";
   favorit.style.display = "none";
   user_icon.classList.add("footer-fn");
