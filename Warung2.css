@@ -492,7 +492,7 @@ nav #home-nav {
 }
 }*/
 
-@media only screen and (max-width: 1336px) and (max-height: 768px) {
+@media only screen and (max-width: 1336px) {
     nav {
         height: 40px;
     }
