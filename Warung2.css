@@ -265,7 +265,7 @@ nav #home-nav {
     margin: 10px 100px;
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1360px) {
     nav {
         height: 40px;
     }
