@@ -267,18 +267,18 @@ nav #home-nav {
 
 @media only screen and (min-width: 1360px) {
     nav {
-        height: 40px;
+        height: 30px;
     }
     nav .icons {
         margin-left: 1000px;
-        font-size: 30px;
+        font-size: 25px;
     }
     nav h2 {
-        font-size: 40px;
-        margin-top: -6px;
+        font-size: 30px;
+        margin-top: -2px;
     }
     nav #home-nav {
-        font-size: 30px;
+        font-size: 25px;
     }
     .wrapper {
         width: 1010px;
@@ -343,11 +343,10 @@ nav #home-nav {
         font-size: 20px;
     }
     .footer-menu {
-        height: 50px;
+        height: 40px;
     }
     .footer-menu .icon {
-        font-size: 30px;
-        margin-top: 1px;
+        font-size: 20px;
     }
     #search-menu #search {
         width: 90%;
@@ -364,7 +363,7 @@ nav #home-nav {
         margin-bottom: 130px;
     }
     .sigma {
-        margin-left: 400px;
+        margin-left: 450px;
         width: 40%;
     }
 }
