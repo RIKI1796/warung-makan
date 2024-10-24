@@ -282,7 +282,7 @@ nav #home-nav {
     }
     .wrapper {
         width: 1010px;
-        margin-left: 150px;
+        margin-left: 170px;
     }
     .wrapper .menu1 img {
         width: 1000px;
@@ -332,7 +332,7 @@ nav #home-nav {
     .favorit .mkn6,
     .favorit .mkn3,
     .favorit .mkn2 {
-        height: 180px;
+        height: 120px;
         width: 80%;
         margin-left: 30px;
     }
