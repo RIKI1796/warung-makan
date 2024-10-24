@@ -10,16 +10,17 @@ const search = document.getElementById("search");
 const list = document.querySelectorAll(".menu div");
 const sigma = document.getElementById("sigma");
 const footer_menu = document.getElementById("footer-menu");
+const list2 = document.getElementById("list2");
 
-// fungsi footer
+// script search
 search_icon.addEventListener("click", () => {
   search_menu.style.display = "inherit";
   home.style.display = "none";
-  profil_menu.style.display = "none";
-  daftar_menu.style.display = "none";
-  favorit.style.display = "none";
-  profil_menu.style.display = "none";
-  sigma.style.display = "none";
+  profil_menu.classList.add("none");
+  daftar_menu.classList.add("none");
+  favorit.classList.add("none");
+  // footer_menu.style.bottom = "100px";
+  sigma.classList.add("none");
   search_icon.classList.add("footer-fn");
   home_icon.classList.remove("footer-fn");
   user_icon.classList.remove("footer-fn");
@@ -28,9 +29,9 @@ search_icon.addEventListener("click", () => {
 home_icon.addEventListener("click", () => {
   search_menu.style.display = "none";
   home.style.display = "inherit";
-  profil_menu.style.display = "none";
-  daftar_menu.style.display = "inline";
-  favorit.style.display = "inline";
+  profil_menu.classList.add("none");
+  daftar_menu.classList.remove("none");
+  favorit.classList.remove("none");
   home_icon.classList.add("footer-fn");
   search_icon.classList.remove("footer-fn");
   user_icon.classList.remove("footer-fn");
@@ -39,15 +40,16 @@ home_icon.addEventListener("click", () => {
 user_icon.addEventListener("click", () => {
   search_menu.style.display = "none";
   home.style.display = "none";
-  profil_menu.style.display = "inherit";
-  daftar_menu.style.display = "none";
-  favorit.style.display = "none";
+  profil_menu.classList.remove("none");
+  daftar_menu.classList.add("none");
+  favorit.classList.add("none");
+  // footer_menu.style.bottom = "0";
   user_icon.classList.add("footer-fn");
   home_icon.classList.remove("footer-fn");
   search_icon.classList.remove("footer-fn");
 });
 
-// fungsi search
+// script search
 search.addEventListener("input", function () {
   var width = window.innerWidth;
   if (width <= 820) {
@@ -69,7 +71,7 @@ search.addEventListener("input", function () {
 
 search.addEventListener("input", function () {
   var width = window.innerWidth;
-  if (width >= 1000) {
+  if (width >= 1336) {
     const filter = search.value.toLowerCase();
     Array.from(list).forEach(function (item) {
       const text = item.textContent.toLowerCase();
@@ -77,7 +79,8 @@ search.addEventListener("input", function () {
         item.classList.add("show");
         daftar_menu.classList.remove("none");
         item.classList.remove("none");
-        item.style.width = "450px"
+        item.style.width = "300px"
+        list2.classList.add("translate");
       } else {
         item.classList.add("none");
         item.classList.remove("show");
@@ -90,10 +93,28 @@ search.addEventListener("input", () => {
   const inputValue = search.value.trim().toLowerCase();
   if (inputValue === "") {
     daftar_menu.classList.add("none");
-    sigma.classList.add("none");
   } else if (inputValue === "sigma") {
     daftar_menu.classList.add("none");
     sigma.classList.remove("none");
+    sigma.classList.add("sigma");
+  } else if (inputValue === "add") {
+    daftar_menu.classList.add("none");
+    sigma.classList.add("none");
+  } else if (inputValue === "add to") {
+    daftar_menu.classList.add("none");
+    sigma.classList.add("none");
+  } else if (inputValue === "add to cart") {
+    daftar_menu.classList.add("none");
+    sigma.classList.add("none");
+  } else if (inputValue === "idr") {
+    daftar_menu.classList.add("none");
+    sigma.classList.add("none");
+  } else if (inputValue === "idr.") {
+    daftar_menu.classList.add("none");
+    sigma.classList.add("none");
+  } else if (inputValue === "idr. ") {
+    daftar_menu.classList.add("none");
+    sigma.classList.add("none");
   } else {
     daftar_menu.classList.remove("none");
     sigma.classList.add("none");
