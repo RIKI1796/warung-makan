@@ -10,7 +10,6 @@ const search = document.getElementById("search");
 const list = document.querySelectorAll(".menu div");
 const sigma = document.getElementById("sigma");
 const footer_menu = document.getElementById("footer-menu");
-const list2 = document.getElementById("list2");
 
 // script search
 search_icon.addEventListener("click", () => {
@@ -72,7 +71,7 @@ search.addEventListener("input", function () {
 
 search.addEventListener("input", function () {
   var width = window.innerWidth;
-  if (width >= 1336) {
+  if (width >= 1360) {
     const filter = search.value.toLowerCase();
     Array.from(list).forEach(function (item) {
       const text = item.textContent.toLowerCase();
@@ -80,8 +79,7 @@ search.addEventListener("input", function () {
         item.classList.add("show");
         daftar_menu.classList.remove("none");
         item.classList.remove("none");
-        item.style.width = "300px"
-        list2.classList.add("translate");
+        item.style.width = "430px"
       } else {
         item.classList.add("none");
         item.classList.remove("show");
