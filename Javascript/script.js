@@ -10,6 +10,7 @@ const search = document.getElementById("search");
 const list = document.querySelectorAll(".menu div");
 const sigma = document.getElementById("sigma");
 const footer_menu = document.getElementById("footer-menu");
+const list2 = document.getElementById("list2");
 
 // script search
 search_icon.addEventListener("click", () => {
@@ -31,7 +32,6 @@ home_icon.addEventListener("click", () => {
   profil_menu.classList.add("none");
   daftar_menu.classList.remove("none");
   favorit.classList.remove("none");
-  list2.classList.remove("translate");
   home_icon.classList.add("footer-fn");
   search_icon.classList.remove("footer-fn");
   user_icon.classList.remove("footer-fn");
@@ -71,7 +71,7 @@ search.addEventListener("input", function () {
 
 search.addEventListener("input", function () {
   var width = window.innerWidth;
-  if (width >= 1360) {
+  if (width >= 1336) {
     const filter = search.value.toLowerCase();
     Array.from(list).forEach(function (item) {
       const text = item.textContent.toLowerCase();
@@ -79,7 +79,8 @@ search.addEventListener("input", function () {
         item.classList.add("show");
         daftar_menu.classList.remove("none");
         item.classList.remove("none");
-        item.style.width = "430px"
+        item.style.width = "300px"
+        list2.classList.add("translate");
       } else {
         item.classList.add("none");
         item.classList.remove("show");
@@ -90,28 +91,15 @@ search.addEventListener("input", function () {
 
 search.addEventListener("input", () => {
   const inputValue = search.value.trim().toLowerCase();
+  const text = ["ad", "add", "add t", "add to", "add to c", "add to ca", "add to car", "add to cart", "id", "idr", "idr.", "idr. "];
+
   if (inputValue === "") {
     daftar_menu.classList.add("none");
   } else if (inputValue === "sigma") {
     daftar_menu.classList.add("none");
     sigma.classList.remove("none");
     sigma.classList.add("sigma");
-  } else if (inputValue === "add") {
-    daftar_menu.classList.add("none");
-    sigma.classList.add("none");
-  } else if (inputValue === "add to") {
-    daftar_menu.classList.add("none");
-    sigma.classList.add("none");
-  } else if (inputValue === "add to cart") {
-    daftar_menu.classList.add("none");
-    sigma.classList.add("none");
-  } else if (inputValue === "idr") {
-    daftar_menu.classList.add("none");
-    sigma.classList.add("none");
-  } else if (inputValue === "idr.") {
-    daftar_menu.classList.add("none");
-    sigma.classList.add("none");
-  } else if (inputValue === "idr. ") {
+  } else if (text.includes(inputValue)) {
     daftar_menu.classList.add("none");
     sigma.classList.add("none");
   } else {
