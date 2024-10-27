@@ -46,7 +46,7 @@ nav h2 {
 
 nav .icons {
     display: flex;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-top: 1.5px;
 }
 
@@ -143,10 +143,9 @@ nav #home-nav {
     -webkit-text-fill-color: transparent;
 }
 .favorit h1 {
-    background-image: linear-gradient(to bottom, #00C5FF, #01857B);
+    background-image: linear-gradient(to bottom, #00c5ff, #01857b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  
 }
 
 .daftar-menu .list1,
@@ -267,31 +266,31 @@ nav #home-nav {
 
 @media only screen and (min-width: 1360px) {
     nav {
-        height: 30px;
+        height: 40px;
     }
     nav .icons {
-        margin-left: 1000px;
-        font-size: 25px;
+        margin-left: 1360px;
+        font-size: 30px;
     }
     nav h2 {
-        font-size: 30px;
-        margin-top: -2px;
+        font-size: 40px;
+        margin-top: -6px;
     }
     nav #home-nav {
-        font-size: 25px;
+        font-size: 30px;
     }
     .wrapper {
-        width: 1010px;
-        margin-left: 170px;
+        width: 600px;
+        margin-left: 520px;
     }
     .wrapper .menu1 img {
-        width: 1000px;
+        width: 600px;
     }
     .wrapper .menu2 img {
-        width: 1000px;
+        width: 600px;
     }
     .wrapper .menu3 img {
-        width: 1000px;
+        width: 600px;
     }
     .wrapper .menu1 .nama-menu1,
     .wrapper .menu2 .nama-menu2,
@@ -303,10 +302,29 @@ nav #home-nav {
     .wrapper .menu3 p {
         font-size: 35px;
     }
+    .daftar-menu {
+        margin-top: -100px;
+    }
+    .daftar-menu .menu {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 130px;
+    }
+    .daftar-menu .menu .list1 {
+        gap: 10px;
+    }
+    .daftar-menu .menu .list2 {
+        margin-top: 14px;
+        gap: 10px;
+    }
     .daftar-menu h1,
     .favorit h1 {
         font-size: 40px;
         margin-left: 10px;
+    }
+    .favorit1 {
+        display: flex;
+        width: 50%;
     }
     .daftar-menu .menu .mkn1,
     .daftar-menu .menu .mkn2,
@@ -317,22 +335,21 @@ nav #home-nav {
     .favorit .mkn6,
     .favorit .mkn3,
     .favorit .mkn2 {
-        height: 200px;
+        height: 230px;
         width: 80%;
-        margin-left: 50px;
+        margin-left: 30px;
     }
     .daftar-menu .menu a,
     .favorit a {
-        margin-left: 120px;
-        margin-bottom: 10px;
-        height: 40px;
+        margin-left: 70px;
+        height: 30px;
         width: 50%;
         font-size: 32px;
         text-align: center;
     }
     .daftar-menu .menu h2,
     .favorit h2 {
-        font-size: 30px;
+        font-size: 40px;
     }
     .daftar-menu .menu .harga,
     .favorit .harga {
@@ -343,10 +360,11 @@ nav #home-nav {
         font-size: 20px;
     }
     .footer-menu {
-        height: 40px;
+        height: 50px;
     }
     .footer-menu .icon {
-        font-size: 20px;
+        font-size: 30px;
+        margin-top: 1px;
     }
     #search-menu #search {
         width: 90%;
@@ -359,11 +377,13 @@ nav #home-nav {
         font-size: 100px;
         text-align: center;
     }
-    .daftar-menu .menu {
-        margin-bottom: 130px;
+    .favorit {
+        margin-bottom: 100px;
     }
-    .sigma {
-        margin-left: 450px;
-        width: 40%;
+    .translate {
+        transform: translateX(-310px) translateY(400px);
+    }
+    #profil-menu .none {
+        display: none;
     }
 }
