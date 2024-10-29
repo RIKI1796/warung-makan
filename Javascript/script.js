@@ -78,7 +78,7 @@ search.addEventListener("input", function () {
       if (text.includes(filter)) {
         item.classList.add("show");
         item.classList.add("showdesk");
-        footer_menu.style.marginTop = "50px";
+        footer_menu.style.marginTop = "100px";
         daftar_menu.classList.remove("none");
         item.classList.remove("none");
         item.style.width = "300px"
