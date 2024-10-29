@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/perpus.html" }
+    { "source": "/(.*)", "destination": "/Warung2.html" }
   ]
 }
