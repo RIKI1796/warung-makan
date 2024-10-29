@@ -258,6 +258,7 @@ nav #home-nav {
 }
 .show {
     display: inline;
+    margin-top: 60px;
 }
 .sigma {
     width: 50%;
