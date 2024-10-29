@@ -32,8 +32,6 @@ home_icon.addEventListener("click", () => {
   home.style.display = "inherit";
   profil_menu.classList.add("none");
   daftar_menu.classList.remove("none");
-  daftar_menu.style.display = "inline";
-  menu.style.display = "flex";
   favorit.classList.remove("none");
   home_icon.classList.add("footer-fn");
   search_icon.classList.remove("footer-fn");
