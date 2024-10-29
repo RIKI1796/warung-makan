@@ -11,6 +11,7 @@ const list = document.querySelectorAll(".menu div");
 const sigma = document.getElementById("sigma");
 const footer_menu = document.getElementById("footer-menu");
 const list2 = document.getElementById("list2");
+const menu = document.getElementById("menu");
 
 // script search
 search_icon.addEventListener("click", () => {
@@ -30,6 +31,7 @@ home_icon.addEventListener("click", () => {
   search_menu.style.display = "none";
   home.style.display = "inherit";
   profil_menu.classList.add("none");
+  menu.style.display = "flex";
   daftar_menu.classList.remove("none");
   favorit.classList.remove("none");
   home_icon.classList.add("footer-fn");
