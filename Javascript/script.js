@@ -31,8 +31,9 @@ home_icon.addEventListener("click", () => {
   search_menu.style.display = "none";
   home.style.display = "inherit";
   profil_menu.classList.add("none");
-  menu.style.display = "flex";
   daftar_menu.classList.remove("none");
+  daftar_menu.style.display = "innherit"
+  menu.style.display = "flex";
   favorit.classList.remove("none");
   home_icon.classList.add("footer-fn");
   search_icon.classList.remove("footer-fn");
@@ -81,7 +82,6 @@ search.addEventListener("input", function () {
         item.classList.add("show");
         daftar_menu.classList.add("showdesk");
         daftar_menu.classList.remove("none");
-        footer_menu.style.marginTop = "100px";
         item.classList.remove("none");
         item.style.width = "300px"
         list2.classList.add("translate");
