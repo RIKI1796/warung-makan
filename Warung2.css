@@ -391,4 +391,7 @@ nav #home-nav {
     #profil-menu .none {
         display: none;
     }
+    .showdesk {
+        margin-top: 40px;
+        margin-bottom: 100px;
 }
