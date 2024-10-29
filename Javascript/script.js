@@ -77,7 +77,7 @@ search.addEventListener("input", function () {
       const text = item.textContent.toLowerCase();
       if (text.includes(filter)) {
         item.classList.add("show");
-        item.style.marginTop = "80px";
+        item.classList.add("showdesk");
         daftar_menu.classList.remove("none");
         item.classList.remove("none");
         item.style.width = "300px"
