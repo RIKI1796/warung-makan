@@ -79,6 +79,7 @@ search.addEventListener("input", function () {
         item.classList.add("show");
         daftar_menu.classList.add("showdesk");
         daftar_menu.classList.remove("none");
+        footer_menu.style.marginTop = "100px";
         item.classList.remove("none");
         item.style.width = "300px"
         list2.classList.add("translate");
