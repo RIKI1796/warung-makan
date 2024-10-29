@@ -77,7 +77,8 @@ search.addEventListener("input", function () {
       const text = item.textContent.toLowerCase();
       if (text.includes(filter)) {
         item.classList.add("show");
-        daftar_menu.style.marginTop = "80px";
+        daftar_menu.style.marginTop = "40px";
+        daftar_menu.style.marginBottom = "50px";
         daftar_menu.classList.remove("none");
         item.classList.remove("none");
         item.style.width = "300px"
