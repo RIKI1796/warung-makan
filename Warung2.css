@@ -267,6 +267,7 @@ nav #home-nav {
 @media only screen and (min-width: 1360px) {
     nav {
         height: 40px;
+        top: 0;
     }
     nav .icons {
         font-size: 30px;
