@@ -78,7 +78,7 @@ search.addEventListener("input", function () {
       if (text.includes(filter)) {
         item.classList.add("show");
         item.style.marginTop = "30px";
-        list2.style.marginTop = "50px";
+        list2.style.marginTop = "60px";
         daftar_menu.classList.remove("none");
         item.classList.remove("none");
         item.style.width = "300px"
