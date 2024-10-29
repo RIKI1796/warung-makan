@@ -88,6 +88,8 @@ search.addEventListener("input", function () {
       } else {
         item.classList.add("none");
         item.classList.remove("show");
+        daftar_menu.classList.add("none");
+        list2.classList.remove("translate");
       }
     });
   }
