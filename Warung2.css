@@ -348,6 +348,10 @@ nav #home-nav {
         font-size: 25px;
         text-align: center;
     }
+    .daftar-menu .menu .list2 a {
+        font-size: 25px;
+        width: 55%;
+    }
     .daftar-menu .menu h2,
     .favorit h2 {
         font-size: 40px;
