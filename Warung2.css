@@ -269,12 +269,12 @@ nav #home-nav {
         height: 40px;
     }
     nav .icons {
-        margin-left: 1360px;
         font-size: 30px;
     }
     nav h2 {
         font-size: 40px;
         margin-top: -6px;
+        width: 100%;
     }
     nav #home-nav {
         font-size: 30px;
@@ -300,7 +300,7 @@ nav #home-nav {
     .wrapper .menu1 p,
     .wrapper .menu2 p,
     .wrapper .menu3 p {
-        font-size: 35px;
+        font-size: 30px;
     }
     .daftar-menu {
         margin-top: -100px;
@@ -342,9 +342,9 @@ nav #home-nav {
     .daftar-menu .menu a,
     .favorit a {
         margin-left: 70px;
-        height: 30px;
+        height: 35px;
         width: 50%;
-        font-size: 32px;
+        font-size: 25px;
         text-align: center;
     }
     .daftar-menu .menu h2,
