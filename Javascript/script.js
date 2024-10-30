@@ -75,21 +75,27 @@ search.addEventListener("input", function () {
 
 search.addEventListener("input", function () {
   const inputValue = search.value.trim().toLowerCase();
-  var width = window.innerWidth;
+  const width = window.innerWidth;
+
   if (width >= 1336) {
-    const filter = search.value.toLowerCase();
+    const filter = inputValue; // Use the trimmed input value directly
     Array.from(list).forEach(function (item) {
       const text = item.textContent.toLowerCase();
-      if (text.includes(filter)) {
+
+      if (text.includes(filter) && filter !== "") {
         item.classList.add("show");
         daftar_menu.classList.add("showdesk");
         daftar_menu.classList.remove("none");
         item.classList.remove("none");
-        item.style.width = "300px"
+        item.style.width = "300px";
         list2.classList.add("translate");
-      } else if (inputValue === "") {
-        daftar_menu.classList.add("none");
+      } else {
+        item.classList.remove("show");
+      }
+
+      if (inputValue === "") {
         daftar_menu.classList.remove("showdesk");
+        daftar_menu.classList.add("none");
         list2.classList.remove("translate");
         menu.style.display = "flex";
         item.classList.remove("show");
