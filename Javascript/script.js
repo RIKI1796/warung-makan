@@ -82,7 +82,7 @@ search.addEventListener("input", function () {
     Array.from(list).forEach(function (item) {
       const text = item.textContent.toLowerCase();
 
-      if (text.includes(filter) && filter !== "") {
+      if (text.includes(filter)) {
         item.classList.add("show");
         daftar_menu.classList.add("showdesk");
         daftar_menu.classList.remove("none");
