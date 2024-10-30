@@ -74,6 +74,7 @@ search.addEventListener("input", function () {
 });
 
 search.addEventListener("input", function () {
+  const inputValue = search.value.trim().toLowerCase();
   var width = window.innerWidth;
   if (width >= 1336) {
     const filter = search.value.toLowerCase();
