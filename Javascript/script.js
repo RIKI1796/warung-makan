@@ -93,11 +93,6 @@ search.addEventListener("input", function () {
         list2.classList.remove("translate");
         menu.style.display = "flex";
         item.classList.remove("show");
-      } else {
-        item.classList.add("none");
-        item.classList.remove("show");
-        daftar_menu.classList.remove("showdesk");
-        list2.classList.remove("translate");
       }
     });
   }
