@@ -102,6 +102,7 @@ search.addEventListener("input", () => {
     daftar_menu.classList.add("none");
     daftar_menu.classList.remove("showdesk");
     list2.classList.remove("translate");
+    menu.style.display = "flex";
     
   } else if (inputValue === "sigma") {
     daftar_menu.classList.add("none");
