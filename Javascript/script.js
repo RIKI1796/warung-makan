@@ -86,6 +86,12 @@ search.addEventListener("input", function () {
         item.classList.remove("none");
         item.style.width = "300px"
         list2.classList.add("translate");
+      } else if (inputValue === "") {
+        daftar_menu.classList.add("none");
+        daftar_menu.classList.remove("showdesk");
+        list2.classList.remove("translate");
+        menu.style.display = "flex";
+        item.classList.remove("show");
       } else {
         item.classList.add("none");
         item.classList.remove("show");
@@ -99,14 +105,8 @@ search.addEventListener("input", function () {
 search.addEventListener("input", () => {
   const inputValue = search.value.trim().toLowerCase();
   const text = ["ad", "add", "add t", "add to", "add to c", "add to ca", "add to car", "add to cart", "id", "idr", "idr.", "idr. "];
-
-  if (inputValue === "") {
-    daftar_menu.classList.add("none");
-    daftar_menu.classList.remove("showdesk");
-    list2.classList.remove("translate");
-    menu.style.display = "flex";
     
-  } else if (inputValue === "sigma") {
+  if (inputValue === "sigma") {
     daftar_menu.classList.add("none");
     sigma.classList.remove("none");
     sigma.classList.add("sigma");
