@@ -100,6 +100,7 @@ search.addEventListener("input", function () {
         list2.classList.remove("translate");
         menu.style.display = "flex";
         item.classList.remove("show");
+        item.classList.add("none");
       }
     });
   }
