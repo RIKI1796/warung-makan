@@ -15,7 +15,7 @@ const menu = document.getElementById("menu");
 
 // script search
 search_icon.addEventListener("click", () => {
-  search_menu.style.display = "inherit";
+  search_menu.classList.remove("none");
   home.style.display = "none";
   profil_menu.classList.add("none");
   daftar_menu.classList.add("none");
@@ -28,7 +28,7 @@ search_icon.addEventListener("click", () => {
 });
 
 home_icon.addEventListener("click", () => {
-  search_menu.style.display = "none";
+  search_menu.classList.add("none");
   home.style.display = "inherit";
   profil_menu.classList.add("none");
   daftar_menu.classList.remove("none");
@@ -39,7 +39,7 @@ home_icon.addEventListener("click", () => {
 });
 
 user_icon.addEventListener("click", () => {
-  search_menu.style.display = "none";
+  search_menu.classList.add("none");
   home.style.display = "none";
   profil_menu.classList.remove("none");
   daftar_menu.classList.add("none");
