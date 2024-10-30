@@ -74,11 +74,11 @@ search.addEventListener("input", function () {
 });
 
 search.addEventListener("input", function () {
-  const inputValue = search.value.trim().toLowerCase();
   const width = window.innerWidth;
 
   if (width >= 1360) {
     const filter = search.value.toLowerCase()
+    const inputValue = search.value.trim().toLowerCase();
     Array.from(list).forEach(function (item) {
       const text = item.textContent.toLowerCase();
 
@@ -91,6 +91,7 @@ search.addEventListener("input", function () {
         list2.classList.add("translate");
       } else {
         item.classList.remove("show");
+        item.classList.add("none");
       }
 
       if (inputValue === "") {
