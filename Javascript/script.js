@@ -33,6 +33,7 @@ home_icon.addEventListener("click", () => {
   profil_menu.classList.add("none");
   daftar_menu.classList.remove("none");
   favorit.classList.remove("none");
+  menu.style.display = "flex";
   home_icon.classList.add("footer-fn");
   search_icon.classList.remove("footer-fn");
   user_icon.classList.remove("footer-fn");
