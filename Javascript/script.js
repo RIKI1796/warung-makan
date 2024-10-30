@@ -37,6 +37,8 @@ home_icon.addEventListener("click", () => {
   home_icon.classList.add("footer-fn");
   search_icon.classList.remove("footer-fn");
   user_icon.classList.remove("footer-fn");
+  daftar_menu.classList.remove("showdesk");
+  list2.classList.remove("translate");
 });
 
 user_icon.addEventListener("click", () => {
