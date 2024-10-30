@@ -78,7 +78,7 @@ search.addEventListener("input", function () {
   const width = window.innerWidth;
 
   if (width >= 1360) {
-    const filter = inputValue; // Use the trimmed input value directly
+    const filter = search.value.toLowerCase()
     Array.from(list).forEach(function (item) {
       const text = item.textContent.toLowerCase();
 
