@@ -58,7 +58,7 @@ search.addEventListener("input", function () {
   var width = window.innerWidth;
   if (width <= 820) {
     const filter = search.value.toLowerCase();
-    String.from(list).forEach(function (item) {
+    Array.from(list).forEach(function (item) {
       const text = item.textContent.toLowerCase();
       if (text.includes(filter)) {
         item.classList.add("show");
@@ -79,7 +79,7 @@ search.addEventListener("input", function () {
   if (width >= 1360) {
     const filter = search.value.toLowerCase()
     const inputValue = search.value.trim().toLowerCase();
-    String.from(list).forEach(function (item) {
+    Array.from(list).forEach(function (item) {
       const text = item.textContent.toLowerCase();
 
       if (text.includes(filter)) {
