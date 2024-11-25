@@ -84,7 +84,6 @@ search.addEventListener("input", function () {
 
       if (text.includes(filter)) {
         item.classList.add("show");
-        daftar_menu.classList.add("showdesk");
         daftar_menu.classList.remove("none");
         item.classList.remove("none");
         item.style.width = "300px";
@@ -95,7 +94,6 @@ search.addEventListener("input", function () {
       }
 
       if (inputValue === "") {
-        daftar_menu.classList.remove("showdesk");
         daftar_menu.classList.add("none");
         list2.classList.remove("translate");
         menu.style.display = "flex";
