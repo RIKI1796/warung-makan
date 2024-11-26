@@ -31,14 +31,13 @@ home_icon.addEventListener("click", () => {
   search_menu.classList.add("none");
   home.style.display = "inherit";
   profil_menu.classList.add("none");
-  daftar_menu.classList.remove("none");
+  daftar_menu.style.display = "inherit";
   favorit.classList.remove("none");
   menu.style.display = "flex";
   home_icon.classList.add("footer-fn");
   search_icon.classList.remove("footer-fn");
   user_icon.classList.remove("footer-fn");
   daftar_menu.classList.remove("showdesk");
-  list2.classList.add("translate");
 });
 
 user_icon.addEventListener("click", () => {
@@ -62,7 +61,6 @@ search.addEventListener("input", function () {
       const text = item.textContent.toLowerCase();
       if (text.includes(filter)) {
         item.classList.add("show");
-        daftar_menu.classList.remove("none");
         item.classList.remove("none");
         item.style.width = "135px"
       } else {
@@ -84,7 +82,6 @@ search.addEventListener("input", function () {
 
       if (text.includes(filter)) {
         item.classList.add("show");
-        daftar_menu.classList.remove("none");
         item.classList.remove("none");
         item.classList.add("showdesk");
         item.style.width = "300px";
@@ -95,7 +92,7 @@ search.addEventListener("input", function () {
       }
 
       if (inputValue === "") {
-        daftar_menu.classList.add("none");
+        daftar_menu.style.display = "none";
         item.classList.add("none");
         item.classList.remove("show");
       }
@@ -108,14 +105,14 @@ search.addEventListener("input", () => {
   const text = ["ad", "add", "add t", "add to", "add to c", "add to ca", "add to car", "add to cart", "id", "idr", "idr.", "idr. "];
     
   if (inputValue === "sigma") {
-    daftar_menu.classList.add("none");
+    daftar_menu.style.display = "none"; 
     sigma.classList.remove("none");
     sigma.classList.add("sigma");
   } else if (text.includes(inputValue)) {
-    daftar_menu.classList.add("none");
+    daftar_menu.style.display = "none";
     sigma.classList.add("none");
   } else {
-    daftar_menu.classList.remove("none");
+    daftar_menu.style.display = "inherit";
     sigma.classList.add("none");
   }
 });
