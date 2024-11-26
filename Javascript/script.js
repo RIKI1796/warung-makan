@@ -87,7 +87,6 @@ search.addEventListener("input", function () {
         daftar_menu.classList.remove("none");
         item.classList.remove("none");
         item.style.width = "300px";
-        list2.classList.add("translate");
       } else {
         item.classList.remove("show");
         item.classList.add("none");
