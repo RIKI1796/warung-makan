@@ -94,9 +94,9 @@ search.addEventListener("input", function () {
       }
 
       if (inputValue === "") {
-        daftar_menu.style.display = "none";
+        daftar_menu.style.display = "none"
         menu.style.display = "none";
-        item.classList.add("none");
+        item.style.display = ("none");
         item.classList.remove("show");
       }
     });
