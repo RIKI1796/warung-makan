@@ -18,7 +18,7 @@ search_icon.addEventListener("click", () => {
   search_menu.classList.remove("none");
   home.style.display = "none";
   profil_menu.classList.add("none");
-  daftar_menu.classList.add("none");
+  daftar_menu.style.display = "none";
   favorit.classList.add("none");
   // footer_menu.style.bottom = "100px";
   sigma.classList.add("none");
@@ -44,8 +44,8 @@ home_icon.addEventListener("click", () => {
 user_icon.addEventListener("click", () => {
   search_menu.classList.add("none");
   home.style.display = "none";
-  profil_menu.classList.remove("none");
-  daftar_menu.classList.add("none");
+  profil_menu.classList.remove("none")
+  daftar_menu.style.display = "none";
   favorit.classList.add("none");
   // footer_menu.style.bottom = "0";
   user_icon.classList.add("footer-fn");
