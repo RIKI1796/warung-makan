@@ -84,12 +84,14 @@ search.addEventListener("input", function () {
 
       if (text.includes(filter)) {
         item.classList.add("show");
-        item.classList.remove("none");
+        menu.style.display = "inherit";
+        item.style.display = "inherit";
         item.classList.add("showdesk");
         item.style.width = "300px";
       } else {
         item.classList.remove("show");
-        item.classList.add("none");
+        menu.style.dsisplay = "none";
+        item.style.display = "none";
         item.classList.remove("showdesk");
       }
        if (inputValue === "") {
