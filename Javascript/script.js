@@ -97,7 +97,6 @@ search.addEventListener("input", function () {
       if (inputValue === "") {
         daftar_menu.classList.add("none");
         item.classList.add("none");
-        menu.style.display = "flex";
         item.classList.remove("show");
       }
     });
