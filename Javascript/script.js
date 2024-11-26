@@ -93,6 +93,7 @@ search.addEventListener("input", function () {
 
       if (inputValue === "") {
         daftar_menu.style.display = "none";
+        menu.style.display = "none";
         item.classList.add("none");
         item.classList.remove("show");
       }
@@ -106,13 +107,16 @@ search.addEventListener("input", () => {
     
   if (inputValue === "sigma") {
     daftar_menu.style.display = "none"; 
+    menu.style.display = "none";
     sigma.classList.remove("none");
     sigma.classList.add("sigma");
   } else if (text.includes(inputValue)) {
     daftar_menu.style.display = "none";
+    menu.style.display = "none";
     sigma.classList.add("none");
   } else {
     daftar_menu.style.display = "inherit";
+    menu.style.display = "flex";
     sigma.classList.add("none");
   }
 });
