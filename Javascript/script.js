@@ -96,7 +96,7 @@ search.addEventListener("input", function () {
       if (inputValue === "") {
         daftar_menu.style.display = "none"
         menu.style.display = "none";
-        item.style.display = "none"";
+        item.style.display = "none";
         item.classList.remove("show");
       }
     });
