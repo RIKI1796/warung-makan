@@ -86,15 +86,17 @@ search.addEventListener("input", function () {
         item.classList.add("show");
         daftar_menu.classList.remove("none");
         item.classList.remove("none");
+        item.classList.add("showdesk");
         item.style.width = "300px";
       } else {
         item.classList.remove("show");
         item.classList.add("none");
+        item.classList.remove("showdesk");
       }
 
       if (inputValue === "") {
         daftar_menu.classList.add("none");
-        list2.classList.remove("translate");
+        item.classList.add("none");
         menu.style.display = "flex";
         item.classList.remove("show");
       }
