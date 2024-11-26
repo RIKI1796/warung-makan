@@ -92,6 +92,12 @@ search.addEventListener("input", function () {
         item.classList.add("none");
         item.classList.remove("showdesk");
       }
+       if (inputValue === "") {
+        daftar_menu.style.display = "none"
+        menu.style.display = "none";
+        item.style.display = "none";
+        item.classList.remove("show");
+      }
     });
   }
 });
