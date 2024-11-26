@@ -84,8 +84,8 @@ search.addEventListener("input", function () {
 
       if (text.includes(filter)) {
         item.classList.add("show");
-        menu.style.display = "inline";
-        item.style.display = "inline";
+        menu.style.display = "block";
+        item.style.display = "block";
         item.classList.add("showdesk");
         item.style.width = "300px";
       } else {
