@@ -35,6 +35,7 @@ home_icon.addEventListener("click", () => {
   favorit.classList.remove("none");
   menu.style.display = "flex";
   list.style.display = "flex";
+  list2.style.display = "flex";
   home_icon.classList.add("footer-fn");
   search_icon.classList.remove("footer-fn");
   user_icon.classList.remove("footer-fn");
