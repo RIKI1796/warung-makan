@@ -29,9 +29,9 @@ search_icon.addEventListener("click", () => {
 
 home_icon.addEventListener("click", () => {
   search_menu.classList.add("none");
-  home.style.display = "inherit";
+  home.style.display = "inline";
   profil_menu.classList.add("none");
-  daftar_menu.style.display = "inherit";
+  daftar_menu.style.display = "inline";
   favorit.classList.remove("none");
   menu.style.display = "flex";
   list.style.display = "flex";
@@ -84,8 +84,8 @@ search.addEventListener("input", function () {
 
       if (text.includes(filter)) {
         item.classList.add("show");
-        menu.style.display = "inherit";
-        item.style.display = "inherit";
+        menu.style.display = "inline";
+        item.style.display = "inline";
         item.classList.add("showdesk");
         item.style.width = "300px";
       } else {
@@ -118,7 +118,7 @@ search.addEventListener("input", () => {
     menu.style.display = "none";
     sigma.classList.add("none");
   } else {
-    daftar_menu.style.display = "inherit";
+    daftar_menu.style.display = "inline";
     menu.style.display = "flex";
     sigma.classList.add("none");
   }
