@@ -382,7 +382,7 @@ nav #home-nav {
         margin-bottom: 100px;
     }
     .translate {
-        transform: translateX(-310px) translateY(400px);
+        transform: translateY(400px);
     }
     #profil-menu .none {
         display: none;
