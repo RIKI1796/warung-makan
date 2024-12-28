@@ -13,6 +13,10 @@
     color: #b7b7b7c7;
 }
 
+#search-menu {
+    display: none;
+}
+
 #search-menu #search {
     width: 90%;
     height: 20px;
@@ -260,18 +264,64 @@ nav #home-nav {
     margin: 10px 100px;
 }
 
+#profil-menu .profile {
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+#profil-menu .picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    color: white;
+    width: 150px;
+    height: 140px;
+    font-size: 110px;
+    border-radius: 50%;
+}
+#profil-menu .username {
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#profil-menu .button {
+    display: flex;
+    justify-content: end;
+    transform: translateY(25px) translateX(-30px);
+}
+
+#profil-menu .confirm {
+    display: none;
+    color: #3a6fff;
+}
+
+#profil-menu .gambar {
+  display: flex;
+  margin-left: 42px;
+}
+
+#profil-menu .gambar #probutton {
+  font-size: 25px;
+  height: 30%;
+  width: 40px;
+  transform: translateY(100px) translateX(-55px);
+  border-radius: 50%;
+}
+
 @media only screen and (min-width: 1360px) {
     nav {
         height: 40px;
-        top: 0;
     }
     nav .icons {
+        margin-left: 1360px;
         font-size: 30px;
     }
     nav h2 {
         font-size: 40px;
         margin-top: -6px;
-        width: 100%;
     }
     nav #home-nav {
         font-size: 30px;
@@ -297,7 +347,7 @@ nav #home-nav {
     .wrapper .menu1 p,
     .wrapper .menu2 p,
     .wrapper .menu3 p {
-        font-size: 30px;
+        font-size: 35px;
     }
     .daftar-menu {
         margin-top: -100px;
@@ -341,12 +391,8 @@ nav #home-nav {
         margin-left: 70px;
         height: 30px;
         width: 50%;
-        font-size: 25px;
+        font-size: 32px;
         text-align: center;
-    }
-    .daftar-menu .menu .list2 a {
-        font-size: 25px;
-        width: 55%;
     }
     .daftar-menu .menu h2,
     .favorit h2 {
@@ -382,12 +428,9 @@ nav #home-nav {
         margin-bottom: 100px;
     }
     .translate {
-        transform: translateY(400px);
+        transform: translateX(-310px) translateY(400px);
     }
     #profil-menu .none {
         display: none;
     }
-    .showdesk {
-        margin-top: 40px;
-}
 }
