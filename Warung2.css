@@ -3,7 +3,11 @@
     padding: 0;
 }
 
-#profil-menu .none {
+body {
+  overflow-x: hidden;
+}
+
+#profil-menu  {
     display: none;
 }
 
@@ -30,7 +34,7 @@
 
 nav {
     display: flex;
-    position: fixed;
+    top: 0;
     background-color: white;
     box-shadow: 0 0 7px;
     width: 100%;
@@ -46,7 +50,7 @@ nav h2 {
 
 nav .icons {
     display: flex;
-    margin-right: 10px;
+    margin-right: 30px;
     margin-top: 1.5px;
 }
 
@@ -137,6 +141,7 @@ nav #home-nav {
     font-size: 110%;
     margin-left: 3px;
 }
+
 .daftar-menu h1 {
     background-image: linear-gradient(to bottom, #ff8206, #c26305);
     -webkit-background-clip: text;
@@ -148,25 +153,11 @@ nav #home-nav {
     -webkit-text-fill-color: transparent;
 }
 
-.daftar-menu .list1,
 .favorit .favorit1 {
     display: flex;
     gap: 10px;
-    margin-top: 15px;
 }
 
-.daftar-menu .list2 {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.daftar-menu .menu .mnu1,
-.daftar-menu .menu .mnu2,
-.daftar-menu .menu .mnu3,
-.daftar-menu .menu .mnu4,
-.daftar-menu .menu .mnu5,
-.daftar-menu .menu .mnu6,
 .favorit .fvrtmnu1,
 .favorit .fvrtmnu2,
 .favorit .fvrtmnu3 {
@@ -174,22 +165,14 @@ nav #home-nav {
     box-shadow: 0 0 5px;
 }
 
-.daftar-menu .menu .mkn1,
-.daftar-menu .menu .mkn2,
-.daftar-menu .menu .mkn3,
-.daftar-menu .menu .mkn4,
-.daftar-menu .menu .mkn5,
-.daftar-menu .menu .mkn6,
 .favorit .mkn6,
 .favorit .mkn3,
 .favorit .mkn2 {
     width: 90%;
     margin-left: 5px;
-    margin-top: 5px;
     height: 80px;
 }
 
-.daftar-menu .menu .content,
 .favorit .content {
     display: flex;
     justify-content: center;
@@ -197,13 +180,11 @@ nav #home-nav {
     font-size: 10px;
 }
 
-.daftar-menu .menu h2,
 .favorit h2 {
     text-align: center;
     font-size: 20px;
 }
 
-.daftar-menu .menu a,
 .favorit a {
     text-decoration: none;
     color: white;
@@ -216,7 +197,6 @@ nav #home-nav {
     font-size: 12px;
 }
 
-.daftar-menu .menu .harga,
 .favorit .harga {
     display: flex;
     flex-direction: column;
@@ -225,7 +205,7 @@ nav #home-nav {
 }
 
 .favorit {
-    margin-top: 150px;
+    margin-top: 50px;
     margin-bottom: 60px;
 }
 
@@ -234,7 +214,7 @@ nav #home-nav {
     background-color: white;
     box-shadow: 0 0 7px;
     border-top: 3px solid red;
-    z-index: 1;
+    z-index: 0;
     width: 100%;
     height: 45px;
     bottom: 0;
@@ -253,12 +233,7 @@ nav #home-nav {
     padding: 5px;
     transform: scale(115%);
 }
-.none {
-    display: none;
-}
-.show {
-    display: inline;
-}
+
 .sigma {
     width: 50%;
     margin: 10px 100px;
@@ -299,16 +274,84 @@ nav #home-nav {
 }
 
 #profil-menu .gambar {
-  display: flex;
-  margin-left: 42px;
+    display: flex;
+    margin-left: 42px;
 }
 
 #profil-menu .gambar #probutton {
-  font-size: 25px;
-  height: 30%;
-  width: 40px;
-  transform: translateY(100px) translateX(-55px);
-  border-radius: 50%;
+    font-size: 25px;
+    height: 30%;
+    width: 40px;
+    transform: translateY(100px) translateX(-55px);
+    border-radius: 50%;
+}
+
+#profil-menu #message {
+    display: none;
+    justify-content: center;
+    margin-top: 15px;
+    color: red;
+    font-size: 14px;
+}
+
+#cart-list {
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(143, 143, 143, 0.904);
+    width: 250px;
+    height: 810px;
+    list-style-type: none;
+    transform: translateX(-400px);
+    overflow-y: scroll;
+    opacity: 0;
+    transition: 1s;
+}
+
+#cart-list #close {
+    font-size: 30px;
+    transform: translateX(220px);
+}
+
+#cart-list .empty {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    font-family: Asap Condensed;
+    font-size: 20px;
+}
+
+#cart-list .content-img {
+    width: 8rem;
+    margin-left: -5px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+#cart-list #remove,
+#cart-list #add {
+    border-radius: 50%;
+}
+
+.daftar-menu .menu {
+    gap: 20px;
+    justify-content: center;
+}
+
+.daftar-menu .card {
+    width: 7.5rem;
+    text-align: center;
+    box-shadow: 0 0 5px;
+}
+
+.daftar-menu .content {
+    color: orange;
+    font-size: 10px;
+}
+
+.daftar-menu .cartt {
+    width: 4rem;
+    color: rgb(249, 111, 0);
 }
 
 @media only screen and (min-width: 1360px) {
@@ -352,18 +395,7 @@ nav #home-nav {
     .daftar-menu {
         margin-top: -100px;
     }
-    .daftar-menu .menu {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 130px;
-    }
-    .daftar-menu .menu .list1 {
-        gap: 10px;
-    }
-    .daftar-menu .menu .list2 {
-        margin-top: 14px;
-        gap: 10px;
-    }
+
     .daftar-menu h1,
     .favorit h1 {
         font-size: 40px;
@@ -373,12 +405,6 @@ nav #home-nav {
         display: flex;
         width: 50%;
     }
-    .daftar-menu .menu .mkn1,
-    .daftar-menu .menu .mkn2,
-    .daftar-menu .menu .mkn3,
-    .daftar-menu .menu .mkn4,
-    .daftar-menu .menu .mkn5,
-    .daftar-menu .menu .mkn6,
     .favorit .mkn6,
     .favorit .mkn3,
     .favorit .mkn2 {
@@ -386,7 +412,6 @@ nav #home-nav {
         width: 80%;
         margin-left: 30px;
     }
-    .daftar-menu .menu a,
     .favorit a {
         margin-left: 70px;
         height: 30px;
@@ -394,15 +419,12 @@ nav #home-nav {
         font-size: 32px;
         text-align: center;
     }
-    .daftar-menu .menu h2,
     .favorit h2 {
         font-size: 40px;
     }
-    .daftar-menu .menu .harga,
     .favorit .harga {
         font-size: 30px;
     }
-    .daftar-menu .menu .content,
     .favorit .content {
         font-size: 20px;
     }
