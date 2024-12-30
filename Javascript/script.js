@@ -105,10 +105,45 @@ search.addEventListener("input", () => {
 });
 
 var tombol = document.querySelector("#profil-menu .button");
-var username = document.querySelector("#profil-menu .username");
+let username = document.querySelector("#profil-menu .username");
 var inputUser = document.createElement('input');
 inputUser.maxLength = 6;
 var confirm = document.querySelector('#profil-menu .confirm');
+var message = document.getElementById("message");
+
+window.addEventListener("load", function() {
+  const savedUsername = localStorage.getItem("username");
+  const savedFoto = localStorage.getItem("fotoProfil");
+  if (savedFoto) {
+    fotoprofil.src = savedFoto;
+  } if (savedUsername) {
+    username.innerHTML = savedUsername;
+  };
+});
+
+inputUser.addEventListener("input", function() {
+  if (inputUser.value.length >= 3) {
+    message.style.display = "none";
+    confirm.addEventListener("click", function() {
+      if (inputUser.value.trim() === "") {
+        alert("Form tidak boleh kosong");
+      } else {
+        message.style.display = "none";
+        alert("Username Berhasil diganti");
+        inputUser.replaceWith(username);
+        let newValue = inputUser.value.trim();
+        username.innerHTML = newValue;
+        confirm.replaceWith(tombol);
+        localStorage.setItem("username", inputUser.value.trim());
+      }
+    });
+  } else {
+    message.style.display = "grid";
+    confirm.addEventListener("click", function() {
+      message.style.display = "grid";
+    });
+  }
+});
 
 tombol.addEventListener("click", function() {
   username.replaceWith(inputUser);
@@ -119,34 +154,35 @@ tombol.addEventListener("click", function() {
   confirm.style.transform = 'translateX(0px) translateY(23px)';
 });
 
-
-confirm.addEventListener("click", function() {
-  if (inputUser.value.trim() === "") {
-    alert("Form tidak boleh kosong");
-  } else {
-    alert("Username Berhasil diganti");
-    const newValue = inputUser.value.trim();
-    inputUser.replaceWith(username);
-    username.textContent = newValue;
-    confirm.replaceWith(tombol);
-  }
-});
-
-var fotoprofil = document.querySelector("#profil-menu .gambar .picture");
-var fileprofil = document.getElementById("picfile");
-var buttonchange = document.getElementById("probutton");
+let fotoprofil = document.querySelector("#profil-menu .gambar .picture");
+let fileprofil = document.getElementById("picfile");
+let buttonchange = document.getElementById("probutton");
 
 buttonchange.addEventListener('click', function() {
   fileprofil.click();
 });
 
 fileprofil.addEventListener('change', function() {
-  const file = this.files[0];
-  const reader = new FileReader();
+  let file = this.files[0];
+  let reader = new FileReader();
 
   reader.onload = function(e) {
-    fotoprofil.src = e.target.result;
+    fotoprofil.src = e.target.result
+    localStorage.setItem("fotoProfil", e.target.result);
   };
 
   reader.readAsDataURL(file);
+});
+
+let Keranjang = document.getElementById("icons");
+let ListKeranjang = document.getElementById("cart-list");
+let close = document.getElementById("close");
+
+Keranjang.addEventListener("click", function() {
+  ListKeranjang.style.transform = "translateX(0px)";
+  ListKeranjang.style.opacity = "1";
+});
+close.addEventListener("click", () => {
+  ListKeranjang.style.transform = "translateX(-400px)";
+  ListKeranjang.style.opacity = "0";
 });
