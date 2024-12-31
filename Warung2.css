@@ -153,57 +153,6 @@ nav #home-nav {
     -webkit-text-fill-color: transparent;
 }
 
-.favorit .favorit1 {
-    display: flex;
-    gap: 10px;
-}
-
-.favorit .fvrtmnu1,
-.favorit .fvrtmnu2,
-.favorit .fvrtmnu3 {
-    width: 130%;
-    box-shadow: 0 0 5px;
-}
-
-.favorit .mkn6,
-.favorit .mkn3,
-.favorit .mkn2 {
-    width: 90%;
-    margin-left: 5px;
-    height: 80px;
-}
-
-.favorit .content {
-    display: flex;
-    justify-content: center;
-    color: #ff8304ea;
-    font-size: 10px;
-}
-
-.favorit h2 {
-    text-align: center;
-    font-size: 20px;
-}
-
-.favorit a {
-    text-decoration: none;
-    color: white;
-    background-color: #0013d6ea;
-    width: 70%;
-    text-align: center;
-    margin-top: 5px;
-    border-radius: 5px;
-    margin-left: 20px;
-    font-size: 12px;
-}
-
-.favorit .harga {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    text-align: center;
-}
-
 .favorit {
     margin-top: 50px;
     margin-bottom: 60px;
@@ -322,7 +271,8 @@ nav #home-nav {
 }
 
 #cart-list .content-img {
-    width: 8rem;
+    width: 6rem;
+    height: 70px;
     margin-left: -5px;
     border-radius: 10px;
     margin-right: 20px;
@@ -331,6 +281,21 @@ nav #home-nav {
 #cart-list #remove,
 #cart-list #add {
     border-radius: 50%;
+}
+
+#cart-list .checkout-button button {
+  height: 25px;
+  width: 90px;
+  font-size: 13px;
+  font-family: Asap Condensed;
+  background-color: #7BD3EA;
+  border-radius: 15px;
+  margin-top: 10px;
+  border: 2px black solid;
+}
+
+#cart-list .total {
+  margin-top: 20px;
 }
 
 .daftar-menu .menu {
@@ -352,6 +317,33 @@ nav #home-nav {
 .daftar-menu .cartt {
     width: 4rem;
     color: rgb(249, 111, 0);
+}
+.favorit .menu {
+    gap: 20px;
+    justify-content: center;
+}
+
+.favorit .card {
+    width: 7.5rem;
+    text-align: center;
+    box-shadow: 0 0 5px;
+}
+
+.favorit .content {
+    color: orange;
+    font-size: 10px;
+}
+
+.favorit .cartt {
+    width: 4rem;
+    color: rgb(249, 111, 0);
+}
+.daftar-menu h5,
+.favorit h5 {
+    font-size: 16px;
+}
+.cart-item h3 {
+    font-size: 16px;
 }
 
 @media only screen and (min-width: 1360px) {
