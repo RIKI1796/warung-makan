@@ -151,21 +151,22 @@ inputUser.addEventListener("input", function() {
   }
 });
 
+let fotoprofil = document.querySelector("#profil-menu .gambar .picture");
+let fileprofil = document.getElementById("picfile");
+let buttonchange = document.getElementById("probutton");
 
 tombol.addEventListener("click", function() {
   username.replaceWith(inputUser);
   inputUser.style.marginLeft = '50px';
-  inputUser.style.width = 'auto';
+  inputUser.style.width = '60%';
   inputUser.style.position = 'relative';
+  fotorprofil.style.position = 'relative';
   tombol.replaceWith(confirm);
   confirm.style.display = 'grid';
   confirm.style.justifyContent = 'end';
   confirm.style.transform = 'translateX(0) translateY(23px)';
 });
 
-let fotoprofil = document.querySelector("#profil-menu .gambar .picture");
-let fileprofil = document.getElementById("picfile");
-let buttonchange = document.getElementById("probutton");
 
 buttonchange.addEventListener('click', function() {
   fileprofil.click();
