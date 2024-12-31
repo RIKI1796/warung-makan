@@ -160,7 +160,7 @@ tombol.addEventListener("click", function() {
   inputUser.style.marginLeft = '50px';
   inputUser.style.width = '60%';
   inputUser.style.position = 'relative';
-  fotorprofil.style.position = 'relative';
+  fotoprofil.style.position = 'relative';
   tombol.replaceWith(confirm);
   confirm.style.display = 'grid';
   confirm.style.justifyContent = 'end';
