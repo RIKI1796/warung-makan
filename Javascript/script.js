@@ -154,12 +154,12 @@ inputUser.addEventListener("input", function() {
 
 tombol.addEventListener("click", function() {
   username.replaceWith(inputUser);
-  inputUser.style.marginLeft = '40px';
-  inputUser.style.width = '60%';
+  inputUser.style.marginLeft = '50px';
   tombol.replaceWith(confirm);
-  confirm.style.display = 'flex';
+  confirm.style.display = 'grid';
+  confirm.style.marginLeft = '20px';
   confirm.style.justifyContent = 'end';
-  confirm.style.transform = 'translateX(0px) translateY(23px)';
+  confirm.style.transform = 'translateX(0) translateY(23px)';
 });
 
 let fotoprofil = document.querySelector("#profil-menu .gambar .picture");
