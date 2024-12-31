@@ -155,7 +155,7 @@ inputUser.addEventListener("input", function() {
 tombol.addEventListener("click", function() {
   username.replaceWith(inputUser);
   inputUser.style.marginLeft = '40px';
-  inputUser.style.width = '70%';
+  inputUser.style.width = '60%';
   tombol.replaceWith(confirm);
   confirm.style.display = 'flex';
   confirm.style.justifyContent = 'end';
