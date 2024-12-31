@@ -33,21 +33,22 @@ document.addEventListener('alpine:init', () => {
   Alpine.store('cart', {
     items: [],
     total: 0,
-    quantity: 0,add(newItem) {
-  const cartItem = this.items.find((item) => item.id === newItem.id);
+    lastTotal: 0,
+    quantity: 0, add(newItem) {
+      const cartItem = this.items.find((item) => item.id === newItem.id);
 
-  if (!cartItem) {
-    this.items.push({
-      ...newItem, quantity: 1
-    });
-    this.total += newItem.price;  // Tambahkan harga item baru ke total
-  } else {
-    cartItem.quantity++;
-    this.total += cartItem.price;  // Menambah harga item yang sudah ada
-  }
-  
-  this.quantity = this.items.reduce((sum, item) => sum + item.quantity, 0);
-},
+      if (!cartItem) {
+        this.items.push({
+          ...newItem, quantity: 1
+        });
+        this.total += newItem.price;
+      } else {
+        cartItem.quantity++;
+        this.total += cartItem.price;
+      }
+
+      this.quantity = this.items.reduce((sum, item) => sum + item.quantity, 0);
+    },
     remove(id) {
       const cartItem = this.items.find((item) => item.id === id);
       if (!cartItem) return;
@@ -60,10 +61,55 @@ document.addEventListener('alpine:init', () => {
         this.total -= cartItem.price;
       }
       this.quantity = this.items.reduce((sum, item) => sum + item.quantity, 0);
-    }
+    },
+    checkout() {
+      this.lastTotal = this.total;
+      this.items = [];
+      this.total = 0;
+      this.quantity = 0;
+    },
   });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const checkButton = document.getElementById('checkout');
+  if (checkButton) {
+    checkButton.addEventListener('click', () => {
+      const lastTotal = Alpine.store('cart').lastTotal;
+      if (lastTotal > 0) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Pembayaran Berhasil!',
+          text: `Total Pembayaran: ${rupiah(lastTotal)}`,
+        });
+      }
+    });
+  }
+});
+
+
+document.addEventListener('alpine:init', () => {
+  Alpine.data('favorit',
+    () => ({
+      items: [{
+        id: 2, name: 'Rendang', img: 'rendang.jpg', price: 15000
+      },
+        {
+          id: 3, name: 'Bakso', img: 'bakso.jpg', price: 10000
+        },
+
+        {
+          id: 6, name: 'Nasi Goreng', img: 'nasigoreng.jpg', price: 12000
+        },
+        {
+          id: 8, name: 'Es Teh', img: 'esteh.jpg', price: 3000
+        },
+        {
+          id: 9, name: 'Gorengan', img: 'gorengan.jpg', price: 1000
+        },
+      ],
+    }));
+});
 
 
 const rupiah = (number) => {

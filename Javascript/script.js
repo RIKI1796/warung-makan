@@ -126,28 +126,35 @@ inputUser.addEventListener("input", function() {
     message.style.display = "none";
     confirm.addEventListener("click", function() {
       if (inputUser.value.trim() === "") {
-        alert("Form tidak boleh kosong");
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Form tidak boleh kosong!',
+        });
       } else {
         message.style.display = "none";
-        alert("Username Berhasil diganti");
-        inputUser.replaceWith(username);
-        let newValue = inputUser.value.trim();
-        username.innerHTML = newValue;
-        confirm.replaceWith(tombol);
-        localStorage.setItem("username", inputUser.value.trim());
+        Swal.fire({
+          icon: 'success',
+          title: 'Berhasil!',
+          text: 'Username berhasil diganti.',
+        }).then(() => {
+          inputUser.replaceWith(username);
+          let newValue = inputUser.value.trim();
+          username.innerHTML = newValue;
+          confirm.replaceWith(tombol);
+          localStorage.setItem("username", inputUser.value.trim());
+        });
       }
     });
   } else {
     message.style.display = "grid";
-    confirm.addEventListener("click", function() {
-      message.style.display = "grid";
-    });
   }
 });
 
+
 tombol.addEventListener("click", function() {
   username.replaceWith(inputUser);
-  inputUser.style.transform = 'translateY(7px) translateX(62px)';
+  inputUser.style.marginLeft = '40px';
   tombol.replaceWith(confirm);
   confirm.style.display = 'flex';
   confirm.style.justifyContent = 'end';
