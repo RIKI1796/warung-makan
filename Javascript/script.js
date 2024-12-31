@@ -155,9 +155,10 @@ inputUser.addEventListener("input", function() {
 tombol.addEventListener("click", function() {
   username.replaceWith(inputUser);
   inputUser.style.marginLeft = '50px';
+  inputUser.style.width = 'auto';
+  inputUser.style.position = 'relative';
   tombol.replaceWith(confirm);
   confirm.style.display = 'grid';
-  confirm.style.marginLeft = '20px';
   confirm.style.justifyContent = 'end';
   confirm.style.transform = 'translateX(0) translateY(23px)';
 });
