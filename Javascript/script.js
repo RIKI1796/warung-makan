@@ -1,4 +1,6 @@
 const search_menu = document.getElementById("search-menu");
+const searchMenu = document.querySelector("#search-menu .menu");
+const navbar = document.getElementById("navbar");
 const home = document.getElementById("home");
 const home_icon = document.getElementById("home-icon");
 const search_icon = document.getElementById("search-icon");
@@ -50,57 +52,15 @@ user_icon.addEventListener("click", function() {
   user_icon.classList.add("footer-fn");
 });
 
-// script search
-search.addEventListener("input", function () {
-  var width = window.innerWidth;
-  if (width <= 820) {
-    const filter = search.value.toLowerCase();
-    Array.from(list).forEach(function (item) {
-      const text = item.textContent.toLowerCase();
-      if (text.includes(filter)) {
-        item.style.display = "unset";
-        daftar_menu.style.display = "unset";
-        item.style.width = "140px";
-      } else {
-        item.style.display = "none";
-        item.style.width = "130px";
-      }
-    });
+search.addEventListener('input', () => {
+  searchMenu.style.opacity = '1';
+  if (search.value.trim() === '') {
+    searchMenu.style.opacity = '0';
+    signa.style.display = 'none';
   }
-});
-
-search.addEventListener("input", function () {
-  var width = window.innerWidth;
-  if (width >= 1336) {
-    const filter = search.value.toLowerCase();
-    Array.from(list).forEach(function (item) {
-      const text = item.textContent.toLowerCase();
-      if (text.includes(filter)) {
-        item.style.display = "unset";
-        daftar_menu.style.display = "unset";
-        item.style.width = "275px";
-      } else {
-        item.style.display = "none";
-      }
-    });
-  }
-});
-
-search.addEventListener("input", () => {
-  const inputValue = search.value.trim().toLowerCase();
-  const text = ["ad", "add", "add t", "add to", "add to c", "add to ca", "add to car", "add to cart", "id", "idr", "idr.", "idr. "];
-
-  if (inputValue === "") {
-    daftar_menu.style.display = "none";
-  } else if (inputValue === "sigma") {
-    daftar_menu.style.display = "none";
-    sigma.style.display = "unset";
-  } else if (text.includes(inputValue)) {
-    daftar_menu.style.display = "none";
-    sigma.style.display = "none";
-  } else {
-    daftar_menu.style.display = "unset";
-    sigma.style.display = "none";
+  if (search.value.trim().toLowerCase() === 'sigma') {
+    searchMenu.style.opacity = '0';
+    sigma.style.display = 'unset';
   }
 });
 
@@ -147,7 +107,8 @@ inputUser.addEventListener("input", function() {
       }
     });
   } else {
-    message.style.display = "grid";
+    message.style.display = 'grid';
+    return;
   }
 });
 

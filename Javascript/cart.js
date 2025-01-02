@@ -1,5 +1,6 @@
 document.addEventListener('alpine:init', () => {
   Alpine.data('menu', () => ({
+    searchQuery: "",
     items: [{
       id: 1, name: 'Sate Ayam', img: 'sateayam.jpg', price: 10000
     },
@@ -28,6 +29,28 @@ document.addEventListener('alpine:init', () => {
         id: 9, name: 'Gorengan', img: 'gorengan.jpg', price: 1000
       },
     ],
+    loading: false,
+
+    async fetchItems() {
+      this.loading = true;
+      try {
+        const urls = this.items.map(item => `items/${item.id}`);
+        const responses = await Promise.all(urls.map(url => fetch(url)));
+        const data = await Promise.all(responses.map(response => response.json()));
+
+        this.items = data;
+      } catch (error) {
+        console.error("Error fetching menu data:", error);
+      } finally {
+        this.loading = false;
+      }
+    },
+
+    get filteredItems() {
+      return this.items.filter((item) =>
+        item.name.toLowerCase().includes(this.searchQuery.toLowerCase())
+      );
+    },
   }));
 
   Alpine.store('cart', {
