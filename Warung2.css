@@ -30,6 +30,7 @@ body {
     border: 2px solid black;
     font-size: 17px;
     padding-left: 5px;
+    margin-top: 50px;
 }
 
 nav {
@@ -183,9 +184,10 @@ nav #home-nav {
     transform: scale(115%);
 }
 
-.sigma {
+#sigma {
     width: 50%;
     margin: 10px 100px;
+    display: none;
 }
 
 #profil-menu .profile {
@@ -318,6 +320,27 @@ nav #home-nav {
     width: 4rem;
     color: rgb(249, 111, 0);
 }
+#search-menu .menu {
+    gap: 20px;
+    justify-content: center;
+    opacity: 0;
+}
+
+#search-menu .card {
+    width: 7.5rem;
+    text-align: center;
+    box-shadow: 0 0 5px;
+}
+
+#search-menu .content {
+    color: orange;
+    font-size: 10px;
+}
+
+#search-menu .cartt {
+    width: 4rem;
+    color: rgb(249, 111, 0);
+}
 .favorit .menu {
     gap: 20px;
     justify-content: center;
@@ -339,7 +362,8 @@ nav #home-nav {
     color: rgb(249, 111, 0);
 }
 .daftar-menu h5,
-.favorit h5 {
+.favorit h5,
+#search-menu h5 {
     font-size: 16px;
 }
 .cart-item h3 {
