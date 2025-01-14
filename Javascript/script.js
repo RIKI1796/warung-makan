@@ -157,3 +157,46 @@ close.addEventListener("click", () => {
   ListKeranjang.style.transform = "translateX(-400px)";
   ListKeranjang.style.opacity = "0";
 });
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("halamanUtama").style.display = "unset";
+  }, 2300);
+});
+
+const textElement = document.getElementById("titik");
+const textToType = "... ";
+let index = 0;
+
+let isDeleting = false;
+const typingSpeed = 130;
+const deletingSpeed = 100;
+const pauseTime = 300;
+const restartDelay = 300;
+
+function typeText() {
+  if (isDeleting) {
+    textElement.textContent = textToType.substring(0, index);
+    index--;
+    if (index < 0) {
+      isDeleting = false;
+      setTimeout(typeText, restartDelay);
+    } else {
+      setTimeout(typeText, deletingSpeed);
+    }
+  } else {
+    textElement.textContent = textToType.substring(0, index);
+    index++;
+    if (index >= textToType.length) {
+      setTimeout(function() {
+        isDeleting = true;
+        typeText();
+      }, pauseTime);
+    } else {
+      setTimeout(typeText, typingSpeed);
+    }
+  }
+}
+
+typeText();
