@@ -391,7 +391,7 @@ nav #home-nav {
 }
 
 .loading .progress {
-    margin-bottom: 200px;
+    margin-bottom: 280px;
 }
 .progress-bar {
     animation: Loading 2.6s linear forwards;
@@ -399,7 +399,7 @@ nav #home-nav {
 
 .loading .text {
     display: flex;
-    margin-bottom: -700px;
+    margin-bottom: -300px;
     margin-left: 100px;
     color: black;
 }
