@@ -42,6 +42,18 @@
         ></script>
     </head>
     <body>
+      
+      <div class="loading" id="loading">
+        <div class="text">
+        <h1>Tunggu Sebentar</h1>
+        <h2 id="titik"></h2>
+        </div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 1%"></div>
+</div>
+      </div>
+
+<div class="halamanUtama" id="halamanUtama">
             <nav x-data id="navbar" class="fixed-top">
                 <i id="home-nav" class="fas fa-home"></i>
                 <h2>Warung Makan</h2>
@@ -185,7 +197,7 @@
                         <img
                             :src="`img/${item.img}`"
                             class="card-img-top"
-                            alt="Sate Ayam"
+                            alt=""
                         />
                         <div class="card-body p-0 mnuuu">
                             <div class="content">
@@ -274,6 +286,7 @@
                 </div>
                 <span id="message">Username Harus Terdiri Minimal 3 Huruf</span>
             </div>
+        </div>
         </div>
         <script src="Javascript/script.js"></script>
         <script src="Javascript/cart.js"></script>
