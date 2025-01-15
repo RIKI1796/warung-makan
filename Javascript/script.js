@@ -67,7 +67,7 @@ search.addEventListener('input', () => {
 var tombol = document.querySelector("#profil-menu .button");
 let username = document.querySelector("#profil-menu .username");
 var inputUser = document.createElement('input');
-inputUser.maxLength = 15;
+inputUser.maxLength = 10;
 var confirm = document.querySelector('#profil-menu .confirm');
 var message = document.getElementById("message");
 
