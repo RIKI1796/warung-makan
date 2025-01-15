@@ -400,7 +400,7 @@ nav #home-nav {
 .loading .text {
     display: flex;
     margin-bottom: -35vh;
-    margin-left: 60px;
+    margin-left: 40px;
     color: black;
     justify-content: center;
     align-items: center;
