@@ -399,6 +399,7 @@ nav #home-nav {
 
 .loading .text {
     display: flex;
+    margin-bottom: -5%;
     margin-left: 100px;
     color: black;
     justify-content: center;
