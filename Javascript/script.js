@@ -14,6 +14,9 @@ const sigma = document.getElementById("sigma");
 const footer_menu = document.getElementById("footer-menu");
 const list2 = document.getElementById("list2");
 const menu = document.querySelector("#daftar-menu #menu");
+const button = document.getElementById("darkLight");
+const darkMode = document.getElementById("darkMode");
+const textElement = document.getElementById("titik");
 
 // script search
 search_icon.addEventListener("click", function() {
@@ -26,6 +29,7 @@ search_icon.addEventListener("click", function() {
   search_icon.classList.add("footer-fn");
   home_icon.classList.remove("footer-fn");
   user_icon.classList.remove("footer-fn");
+  button.style.display = "none";
 });
 
 home_icon.addEventListener("click", function() {
@@ -38,6 +42,7 @@ home_icon.addEventListener("click", function() {
   search_icon.classList.remove("footer-fn");
   home_icon.classList.add("footer-fn");
   user_icon.classList.remove("footer-fn");
+  button.style.display = "none";
 });
 
 user_icon.addEventListener("click", function() {
@@ -50,6 +55,7 @@ user_icon.addEventListener("click", function() {
   search_icon.classList.remove("footer-fn");
   home_icon.classList.remove("footer-fn");
   user_icon.classList.add("footer-fn");
+  button.style.display = "unset";
 });
 
 search.addEventListener('input', () => {
@@ -67,7 +73,7 @@ search.addEventListener('input', () => {
 var tombol = document.querySelector("#profil-menu .button");
 let username = document.querySelector("#profil-menu .username");
 var inputUser = document.createElement('input');
-inputUser.maxLength = 10;
+inputUser.maxLength = 6;
 var confirm = document.querySelector('#profil-menu .confirm');
 var message = document.getElementById("message");
 
@@ -165,7 +171,6 @@ window.addEventListener("load", () => {
   }, 2300);
 });
 
-const textElement = document.getElementById("titik");
 const textToType = "... ";
 let index = 0;
 
@@ -200,3 +205,109 @@ function typeText() {
 }
 
 typeText();
+
+const qtty = document.getElementById("qtty");
+const wrng = document.getElementById("wrng");
+const body = document.getElementById("badan");
+const loadingElement = document.getElementById("loading");
+const textLoading = document.getElementById("textLoading");
+
+function darkModeButton() {
+  body.setAttribute("data-bs-theme", "dark");
+  button.innerHTML = "🌙";
+  button.style.backgroundColor = "#1f1f1f";
+  navbar.style.backgroundColor = "#1e1e1e";
+  footer_menu.style.backgroundColor = "#1e1e1e";
+  button.style.transform = "translateX(30px)";
+  search_icon.style.color = "white";
+  user_icon.style.color = "white";
+  home_icon.style.color = "white";
+  requestAnimationFrame(() => {
+    loadingElement.setAttribute("data-bs-theme", "dark");
+    textLoading.style.color = "white";
+    titik.style.color = "white";
+  })
+
+  search_icon.addEventListener("click", () => {
+    search_icon.style.color = "#3e3e3e";
+    home_icon.style.color = "white";
+    user_icon.style.color = "white";
+  });
+
+  home_icon.addEventListener("click", () => {
+    search_icon.style.color = "white";
+    user_icon.style.color = "white";
+    home_icon.style.color = "#3e3e3e";
+  });
+
+  user_icon.addEventListener("click", () => {
+    search_icon.style.color = "white";
+    user_icon.style.color = "#3e3e3e";
+    home_icon.style.color = "white";
+  });
+};
+
+function lightModeButton() {
+  body.setAttribute("data-bs-theme", "light");
+  button.innerHTML = "☀️";
+  button.style.backgroundColor = "white";
+  navbar.style.backgroundColor = "white";
+  footer_menu.style.backgroundColor = "white";
+  button.style.transform = "translateX(0)";
+  search_icon.style.color = "black";
+  user_icon.style.color = "black";
+  home_icon.style.color = "black";
+  requestAnimationFrame(() => {
+    loadingElement.setAttribute("data-bs-theme", "light");
+    textLoading.style.color = "black";
+    titik.style.color = "black";
+  })
+
+  search_icon.addEventListener("click", () => {
+    search_icon.style.color = "#6c6c6c";
+    home_icon.style.color = "black";
+    user_icon.style.color = "black";
+  });
+
+  home_icon.addEventListener("click", () => {
+    search_icon.style.color = "black";
+    user_icon.style.color = "black";
+    home_icon.style.color = "#6c6c6c";
+  });
+
+  user_icon.addEventListener("click", () => {
+    search_icon.style.color = "black";
+    user_icon.style.color = "#6c6c6c";
+    home_icon.style.color = "black";
+  });
+};
+
+darkMode.addEventListener("click", () => {
+  if (body.getAttribute("data-bs-theme") === "dark") {
+    lightModeButton();
+    localStorage.setItem("data-bs-theme", "light");
+  } else {
+    darkModeButton();
+    localStorage.setItem("data-bs-theme", "dark");
+  }
+});
+
+window.addEventListener("load", () => {
+  if (body.Attribute("data-bs-theme") === "light") {
+    lightModeButton();
+  } else {
+    darkModeButton();
+  }
+});
+
+window.addEventListener("load", () => {
+  const tema = localStorage.getItem("data-bs-theme");
+  if (tema) {
+    body.setAttribute("data-bs-theme", tema);
+    if (tema === "light") {
+      lightModeButton();
+    } else {
+      darkModeButton();
+    }
+  }
+});
