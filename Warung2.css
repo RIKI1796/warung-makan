@@ -11,6 +11,22 @@ body {
     display: none;
 }
 
+#darkMode {
+    margin-top: 50px;
+    width: 7vh;
+    margin-left: 5px;
+    background-color: gray;
+    border-radius: 20px;
+}
+
+#darkLight {
+    border-radius: 50%;
+    width: 3.4vh;
+    border: 1.5px black solid;
+    transition: 0.5s;
+    text-align: center;
+}
+
 #profil-menu h1 {
     text-align: center;
     margin-top: 330px;
@@ -381,7 +397,6 @@ nav #home-nav {
 }
 
 .loading {
-    background-color: white;
     display: grid;
     align-items: center;
     height: 100vh;
@@ -399,11 +414,9 @@ nav #home-nav {
 
 .loading .text {
     display: flex;
-    margin-bottom: -35vh;
-    margin-left: 20px;
+    margin-bottom: -500px;
+    margin-left: 100px;
     color: black;
-    justify-content: center;
-    align-items: center;
 }
 
 @keyframes Loading {
