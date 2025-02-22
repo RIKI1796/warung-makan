@@ -592,7 +592,7 @@ nav #cart {
 .daftar-menu .cartt {
     width: 4rem;
     color: rgb(249, 111, 0);
-    margin-top: 2rem;
+    margin-top: 1.7rem;
 }
 #search-menu .menu {
     gap: 20px;
@@ -635,7 +635,7 @@ nav #cart {
 .favorit .cartt {
     width: 4rem;
     color: rgb(249, 111, 0);
-    margin-top: 2rem;
+    margin-top: 1.7rem;
 }
 .daftar-menu h5,
 .favorit h5,
