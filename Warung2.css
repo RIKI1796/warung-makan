@@ -458,7 +458,8 @@ nav #home-nav {
         font-size: 30px;
     }
     nav h2 {
-        font-size: 40px;
+        font-size: 35px;
+        width: 100%;
         margin-top: -6px;
     }
     nav #home-nav {
@@ -480,49 +481,166 @@ nav #home-nav {
     .wrapper .menu1 .nama-menu1,
     .wrapper .menu2 .nama-menu2,
     .wrapper .menu3 .nama-menu3 {
-        font-size: 70px;
+        font-size: 55px;
     }
     .wrapper .menu1 p,
     .wrapper .menu2 p,
     .wrapper .menu3 p {
-        font-size: 35px;
+        font-size: 25px;
     }
-    .daftar-menu {
-        margin-top: -100px;
-    }
+    
+.daftar-menu h1,
+.favorit h1 {
+    font-family: Rowdies;
+    font-size: 110%;
+    margin-left: 3px;
+}
 
-    .daftar-menu h1,
-    .favorit h1 {
-        font-size: 40px;
-        margin-left: 10px;
-    }
-    .favorit1 {
-        display: flex;
-        width: 50%;
-    }
-    .favorit .mkn6,
-    .favorit .mkn3,
-    .favorit .mkn2 {
-        height: 230px;
-        width: 80%;
-        margin-left: 30px;
-    }
-    .favorit a {
-        margin-left: 70px;
-        height: 30px;
-        width: 50%;
-        font-size: 32px;
-        text-align: center;
-    }
-    .favorit h2 {
-        font-size: 40px;
-    }
-    .favorit .harga {
-        font-size: 30px;
-    }
-    .favorit .content {
-        font-size: 20px;
-    }
+.daftar-menu h1 {
+    background-image: linear-gradient(to bottom, #ff8206, #c26305);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.favorit h1 {
+    background-image: linear-gradient(to bottom, #00c5ff, #01857b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.favorit {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+    #cart-list {
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(143, 143, 143, 0.904);
+    width: 250px;
+    height: 100vh;
+    list-style-type: none;
+    transform: translateX(-400px);
+    overflow-y: scroll;
+    opacity: 0;
+    transition: 1s;
+}
+
+#cart-list #close {
+    font-size: 30px;
+    transform: translateX(220px);
+}
+
+#cart-list .empty {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    font-family: Asap Condensed;
+    font-size: 20px;
+}
+
+#cart-list .content-img {
+    width: 6rem;
+    height: 70px;
+    margin-left: -5px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+#cart-list #remove,
+#cart-list #add {
+    border-radius: 50%;
+}
+
+#cart-list .checkout-button button {
+    height: 25px;
+    width: 90px;
+    font-size: 13px;
+    font-family: Asap Condensed;
+    background-color: #7bd3ea;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: 2px black solid;
+}
+
+#cart-list .total {
+    margin-top: 20px;
+}
+
+.daftar-menu .menu {
+    gap: 20px;
+    justify-content: center;
+}
+
+.daftar-menu .card {
+    width: 7.5rem;
+    text-align: center;
+    box-shadow: 0 0 5px;
+}
+
+.daftar-menu .content {
+    color: orange;
+    font-size: 10px;
+}
+
+.daftar-menu .cartt {
+    width: 4rem;
+    color: rgb(249, 111, 0);
+}
+#search-menu .menu {
+    gap: 20px;
+    justify-content: center;
+    opacity: 0;
+}
+
+#search-menu .card {
+    width: 7.5rem;
+    text-align: center;
+    box-shadow: 0 0 5px;
+}
+
+#search-menu .content {
+    color: orange;
+    font-size: 10px;
+}
+
+#search-menu .cartt {
+    width: 4rem;
+    color: rgb(249, 111, 0);
+}
+.favorit .menu {
+    gap: 20px;
+    justify-content: center;
+}
+
+.favorit .card {
+    width: 7.5rem;
+    text-align: center;
+    box-shadow: 0 0 5px;
+}
+
+.favorit .content {
+    color: orange;
+    font-size: 10px;
+}
+
+.favorit .cartt {
+    width: 4rem;
+    color: rgb(249, 111, 0);
+}
+.daftar-menu h5,
+.favorit h5,
+#search-menu h5 {
+    font-size: 14px;
+}
+.daftar-menu .harga,
+.favorit .harga,
+#search-menu .harga {
+    font-size: 14px;
+}
+.cart-item h3 {
+    font-size: 16px;
+}
+
     .footer-menu {
         height: 50px;
     }
@@ -530,19 +648,10 @@ nav #home-nav {
         font-size: 30px;
         margin-top: 1px;
     }
-    #search-menu #search {
-        width: 90%;
-        margin-left: 80px;
-        height: 25px;
-        font-size: 30px;
-    }
     #profil-menu h1 {
         margin-top: 340px;
         font-size: 100px;
         text-align: center;
-    }
-    .favorit {
-        margin-bottom: 100px;
     }
     .translate {
         transform: translateX(-310px) translateY(400px);
