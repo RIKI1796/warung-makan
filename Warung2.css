@@ -399,8 +399,7 @@ nav #home-nav {
 .loading {
     display: grid;
     align-items: center;
-    min-height: 50vh;
-    max-height: 100vh;
+    height: 100vh;
     text-align: center;
     width: 90%;
     margin-left: 23px;
