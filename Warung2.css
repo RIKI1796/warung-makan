@@ -505,6 +505,7 @@ nav #cart {
     background-image: linear-gradient(to bottom, #ff8206, #c26305);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: -50px;
 }
 .favorit h1 {
     background-image: linear-gradient(to bottom, #00c5ff, #01857b);
@@ -513,7 +514,6 @@ nav #cart {
 }
 
 .favorit {
-    margin-top: 50px;
     margin-bottom: 60px;
 }
     #cart-list {
