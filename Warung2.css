@@ -667,7 +667,7 @@ nav #cart {
     }
     .loading {
     text-align: center;
-    width: 60%;
-    margin-left: 23px;
+    width: 50%;
+    margin-left: 50vh;
 }
 }
