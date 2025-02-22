@@ -531,7 +531,7 @@ nav #cart {
 
 #cart-list #close {
     font-size: 30px;
-    transform: translateX(220px);
+    transform: translateX(210px);
 }
 
 #cart-list .empty {
