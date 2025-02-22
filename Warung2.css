@@ -670,4 +670,10 @@ nav #cart {
     width: 50%;
     margin-left: 50vh;
 }
+    .loading .text {
+    display: flex;
+    margin-bottom: auto;
+    margin-left: 100px;
+    color: black;
+}
 }
