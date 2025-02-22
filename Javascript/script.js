@@ -311,3 +311,10 @@ window.addEventListener("load", () => {
     }
   }
 });
+function adjustMargin() {
+  requestAnimationFrame(() => {
+    document.querySelector(".box").style.marginTop = window.innerHeight * 0.5 + "px";
+  });
+}
+window.addEventListener("resize", adjustMargin);
+adjustMargin();
