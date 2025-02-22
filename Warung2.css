@@ -471,27 +471,27 @@ nav #cart {
         font-size: 30px;
     }
     .wrapper {
-        width: 600px;
-        margin-left: 520px;
+        width: 500px;
+        margin-left: 420px;
     }
     .wrapper .menu1 img {
-        width: 600px;
+        width: 500px;
     }
     .wrapper .menu2 img {
-        width: 600px;
+        width: 500px;
     }
     .wrapper .menu3 img {
-        width: 600px;
+        width: 500px;
     }
     .wrapper .menu1 .nama-menu1,
     .wrapper .menu2 .nama-menu2,
     .wrapper .menu3 .nama-menu3 {
-        font-size: 55px;
+        font-size: 40px;
     }
     .wrapper .menu1 p,
     .wrapper .menu2 p,
     .wrapper .menu3 p {
-        font-size: 25px;
+        font-size: 15px;
     }
     
 .daftar-menu h1,
