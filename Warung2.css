@@ -414,7 +414,7 @@ nav #home-nav {
 
 .loading .text {
     display: flex;
-    margin-bottom: -300px;
+    margin-bottom: auto;
     margin-left: 100px;
     color: black;
 }
