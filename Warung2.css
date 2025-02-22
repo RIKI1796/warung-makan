@@ -397,7 +397,6 @@ nav #home-nav {
 }
 
 .loading {
-    display: grid;
     align-items: center;
     height: 100vh;
     text-align: center;
