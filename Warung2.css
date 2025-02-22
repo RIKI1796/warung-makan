@@ -673,7 +673,7 @@ nav #cart {
     .loading .text {
     display: flex;
     margin-bottom: auto;
-    margin-left: 50vh;
+    margin-left: 30vh;
     color: black;
 }
 }
