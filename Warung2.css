@@ -583,6 +583,9 @@ nav #cart {
     text-align: center;
     box-shadow: 0 0 5px;
 }
+.daftar-menu .card-title {
+    font-size: 20px;
+}
 
 .daftar-menu .content {
     color: orange;
@@ -630,6 +633,9 @@ nav #cart {
 .favorit .content {
     color: orange;
     font-size: 10px;
+}
+.favorit .card-title {
+    font-size: 20px;
 }
 
 .favorit .cartt {
