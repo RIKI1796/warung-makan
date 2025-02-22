@@ -397,6 +397,7 @@ nav #home-nav {
 }
 
 .loading {
+    transform: translateY(-50%);
     text-align: center;
     width: 90%;
     margin-left: 23px;
