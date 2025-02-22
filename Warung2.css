@@ -665,4 +665,9 @@ nav #cart {
     #profil-menu .none {
         display: none;
     }
+    .loading {
+    text-align: center;
+    width: 60%;
+    margin-left: 23px;
+}
 }
