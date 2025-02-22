@@ -578,7 +578,8 @@ nav #cart {
 }
 
 .daftar-menu .card {
-    width: 9rem;
+    width: 11rem;
+    height: 12.5rem;
     text-align: center;
     box-shadow: 0 0 5px;
 }
