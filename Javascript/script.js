@@ -325,11 +325,12 @@ let closePicture = document.getElementById("closePicture");
 
 picture.addEventListener("click", () => {
   buttonchange.style.display = "none";
-  username.style.display= "none";
+  username.style.display = "none";
   tombol.style.display = "none";
   picture.style.zIndex = "100";
   picture.style.borderRadius = "0";
-  picture.style.transform = "scale(280%)";
+  picture.style.transform = "scale(190%)";
+  picture.style.height = "100%";
   button.style.display = "none";
   navbar.style.display = "none";
   closePicture.style.display = "unset";
@@ -337,7 +338,7 @@ picture.addEventListener("click", () => {
   closePicture.style.position = "fixed";
   closePicture.style.marginLeft = "250px";
   closePicture.style.fontSize = "40px";
-  picture.style.marginTop = window.innerHeight * 0.3 + "px";
+  picture.style.marginTop = window.innerHeight * 0.2 + "px";
   picture.style.marginRight = window.innerWidth * 0.1 + "px";
   picture.style.imageRendering = "crisp-edges";
   viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, initial-scale=1, maximum-scale=3, user-scalable=yes');
@@ -345,11 +346,12 @@ picture.addEventListener("click", () => {
 
 closePicture.addEventListener("click", () => {
   buttonchange.style.display = "unset";
-  username.style.display= "grid";
+  username.style.display = "grid";
   tombol.style.display = "flex";
   picture.style.zIndex = "0";
   picture.style.borderRadius = "50%";
   picture.style.transform = "scale(100%)";
+  picture.style.height = "140px";
   button.style.display = "unset";
   navbar.style.display = "flex";
   closePicture.style.display = "none";
